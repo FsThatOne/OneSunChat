@@ -18,6 +18,8 @@ enum shakeType{
 class ShakeViewController: BasicViewController, UITabBarDelegate {
     
     var isShaking = false
+    //音效播放
+    private var voiceMaker: AVAudioPlayer!
     
     // MARK: - 懒加载控件
     //tabbar
@@ -75,12 +77,19 @@ extension ShakeViewController{
         }
         isShaking = true
         self.updateLineStatus()
+        let voiceURL = NSBundle.mainBundle().URLForResource("shake_sound", withExtension: "wav")
+        do{
+            try voiceMaker = AVAudioPlayer(contentsOfURL: voiceURL!)
+        } catch{
+            print("Error de reproducccion")
+        }
+        voiceMaker.play()
         // TODO: - 这里放摇一摇的逻辑
 
-        UIView.animateWithDuration(0.4, animations: {
+        UIView.animateWithDuration(0.35, animations: {
             self.updateConstraints(.startShake)
         }) { (isFinished) in
-            UIView.animateWithDuration(0.4, delay: 0.4, options: UIViewAnimationOptions.LayoutSubviews, animations: {
+            UIView.animateWithDuration(0.35, delay: 0.4, options: UIViewAnimationOptions.LayoutSubviews, animations: {
                 self.updateConstraints(.stopShake)
                 }, completion: { (isFinished) in
                     self.isShaking = false
