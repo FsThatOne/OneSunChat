@@ -10,13 +10,15 @@ import UIKit
 
 class BasicTableViewController: BasicViewController {
     
+    
     override func loadView() {
         view = tableView
     }
     
     // MARK: - lazyloading
-    lazy var tableView: UITableView = {
-        let tableView:UITableView = UITableView()
+    lazy var tableView: BasicTableView = {
+        let tableView:BasicTableView = BasicTableView(frame: CGRectZero, style: UITableViewStyle.Plain)
+            
         return tableView
     }()
 }

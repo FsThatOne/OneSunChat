@@ -10,7 +10,22 @@ import UIKit
 
 
 class BasicViewController: UIViewController {
-    // MARK: - 构造函数
+        // MARK: - layout
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = kLightBackGroundColor
+    }
+    
+    // MARK: - lazyloading
+    lazy var backBarButton: UIBarButtonItem = {
+        let backImage:UIImage = UIImage(named: "back_nav_icon")!
+        var backBarButton = UIBarButtonItem(image: backImage, style: .Plain, target: self, action: Selector("backBarClick"))
+        return backBarButton
+    }()
+}
+
+// MARK: - convenience
+extension BasicViewController{
     convenience init(title: String, imageName: String?) {
         self.init()
         self.title = title
@@ -18,32 +33,26 @@ class BasicViewController: UIViewController {
         guard (imageName != nil) else{
             return
         }
-        var img = UIImage(named: imageName!)
-        img = img?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        var imgS = UIImage(named: imageName! + "HL")
-        imgS = imgS?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        tabBarItem.image = img!
-        tabBarItem.selectedImage = imgS!
+        tabBarItem.image = UIImage(name: imageName!,
+            renderingMode: .AlwaysOriginal)
+        tabBarItem.selectedImage = UIImage(name: imageName! + "HL",
+            renderingMode: .AlwaysOriginal)
     }
+    
     convenience init(title: String, hiddenTabBar: Bool) {
         self.init(title: title, imageName: nil)
         hidesBottomBarWhenPushed = hiddenTabBar
     }
-    
-    // MARK: - layout
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = kLightBackGroundColor
-    }
-    
-    // MARK: - custom method
-    
-    
-    // MARK: - lazyloading
-    lazy var backBarButton: UIBarButtonItem = {
-        let backImage:UIImage = UIImage(named: "back_nav_icon")!
-        var backBarButton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: Selector("viewDidLoad"))
-        return backBarButton
-    }()
+
 }
+
+// MARK: - custom method
+extension BasicViewController{
+    func backBarClick(){
+        if (self.navigationController != nil) {
+            self.navigationController?.popViewControllerAnimated(true)
+        }
+    }
+}
+
 

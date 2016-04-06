@@ -16,6 +16,9 @@ enum scanType {
     case Animation
 }
 
+let grayWidth = (UIScreen.mainScreen().bounds.width - 250) * 0.5
+let grayHeight = (UIScreen.mainScreen().bounds.height - 250) * 0.5
+
 class QRCodeViewController: BasicViewController, UITabBarDelegate, AVCaptureMetadataOutputObjectsDelegate{
     
     /// 扫描到20次时,认为二维码已经稳定
@@ -63,15 +66,18 @@ class QRCodeViewController: BasicViewController, UITabBarDelegate, AVCaptureMeta
     }()
     
     
-    // MARK: - 生命周期函数
+    // MARK: - 生命周期函数 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         setUpSession()
         session.startRunning()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         startAnimation()
     }
     
@@ -164,6 +170,26 @@ extension QRCodeViewController{
     func setupLayers(){
         previewLayer.frame = view.bounds
         view.layer.insertSublayer(previewLayer, atIndex: 0)
+        
+        //镂空灰色蒙板
+        let gray = CGColorCreateCopyWithAlpha(UIColor.blackColor().CGColor , 0.4)
+        
+        let left: CALayer = CALayer()
+        let right: CALayer = CALayer()
+        let top: CALayer = CALayer()
+        let bottom: CALayer = CALayer()
+        left.backgroundColor = gray
+        right.backgroundColor = gray
+        top.backgroundColor = gray
+        bottom.backgroundColor = gray
+        left.frame = CGRect(x: 0, y: 0, width: grayWidth, height: CGRectGetHeight(view.frame))
+        right.frame = CGRect(x: kScreenWidth - grayWidth, y: 0, width: grayWidth, height: CGRectGetHeight(view.frame))
+        top.frame = CGRect(x: grayWidth, y: 0, width: 250, height: grayHeight)
+        bottom.frame = CGRect(x: grayWidth, y: kScreenHieght - grayHeight, width: 250, height: grayHeight)
+        view.layer.addSublayer(left)
+        view.layer.addSublayer(right)
+        view.layer.addSublayer(top)
+        view.layer.addSublayer(bottom)
     }
     
     func addConstraints(){

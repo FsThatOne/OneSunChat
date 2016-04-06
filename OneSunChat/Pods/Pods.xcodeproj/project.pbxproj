@@ -7,246 +7,246 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E96620D720A6E5ECC049086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B0B270DE194C9AD250669 /* Foundation.framework */; };
-		1049A0655849B9B5AE11A8E0 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9424467C11C1E673195D63 /* View+SnapKit.swift */; };
-		4DA32EEB3F0D127806CFF390 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A840BC3FD954B8CE5DE1BB9 /* ConstraintAttributes.swift */; };
-		597C6172CEDF5A3CBA5DE2BF /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B087CB65EF3BE7B7648F0 /* ConstraintMaker.swift */; };
-		5AC9B0AC6F72F00D434A123A /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5C9D4DFEC8CE97A9C81C0 /* Debugging.swift */; };
-		6246DACDDE0BC5AA1B7D0A37 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748E6144D2C9AE0E225D6E24 /* Constraint.swift */; };
-		652E7DF6175C5BE07C6951A6 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1933745D50D9A7805ECBAC5E /* EdgeInsets.swift */; };
-		68D817890E1EC665F0AD2342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B0B270DE194C9AD250669 /* Foundation.framework */; };
-		7030321F15813A2512B8CD98 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B637EBC07AF238D0DA521 /* ConstraintItem.swift */; };
-		95032CDA4B425CF606F92333 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D795D0CB0A2499983E763040 /* ViewController+SnapKit.swift */; };
-		9C2B78A684179B25C6116FE2 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7018F60C2561EA76B6F56D50 /* LayoutConstraint.swift */; };
-		ABD95814207B7B151AC5BCBF /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BBCBF968F36CE6BA1247EB /* ConstraintDescription.swift */; };
-		B72C3B97C9F31A5A2DB7006A /* Pods-OneSunChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD8F67B4BE1E545B6604736 /* Pods-OneSunChat-dummy.m */; };
-		CFB41AE03C9AD23F0928EF27 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66FCCE9ADE5A3921096F29B /* ConstraintRelation.swift */; };
-		D54D0DC691C6B29134B4B789 /* Pods-OneSunChat-SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803B17D6A4DD133BDB34336 /* Pods-OneSunChat-SnapKit-dummy.m */; };
-		E37FCD7D4E7D8A0134BA7AED /* Pods-OneSunChat-SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA699218F4C2AAA30FED1048 /* Pods-OneSunChat-SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F49630FB4065E5032645A946 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0516973781EA6B64BF5CDE6 /* SnapKit.swift */; };
-		F88A84660A400E5CD3056275 /* Pods-OneSunChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F02645ED038D9B106F7FDA1F /* Pods-OneSunChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BD48E3DF2C319C6F38427EE /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE812D4020CBA1A8EF4318 /* ViewController+SnapKit.swift */; };
+		2E9C4A0268F1121DF5B98ECE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3E64EBB8976404A729FB87 /* Foundation.framework */; };
+		3FE8F3D2C826A55A29303FA3 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04057E29BC98A6F6A55C66FF /* Debugging.swift */; };
+		43E03D11E5F4885C5CA22229 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546B60C3180C253C9F86AE2 /* ConstraintItem.swift */; };
+		4D92713D906CBC5DD12783FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3E64EBB8976404A729FB87 /* Foundation.framework */; };
+		5C6CD68545AEAFBAAE8A3E6B /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3422EA37FEEE20B30D807C /* LayoutConstraint.swift */; };
+		67851C55629DC74678842C92 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEAF9883011EB44D782F9A /* ConstraintMaker.swift */; };
+		6F62181C71324C581DE4C208 /* Pods-OneSunChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47F93E1896562C003EBAE019 /* Pods-OneSunChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89660731D0F07A1C85BC9AA7 /* Pods-OneSunChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3389BC961C6DE94196BFA7 /* Pods-OneSunChat-dummy.m */; };
+		8A1AA6AA4E3FABF4E2CC9FA9 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29424F888872B086316AA8F /* EdgeInsets.swift */; };
+		93FF019BA1002B49FBBE141F /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6685F6D0E156630C913A81B5 /* View+SnapKit.swift */; };
+		97A921AE7191F3E7934C46B1 /* Pods-OneSunChat-SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 642367DFE63D34F94EA96FB1 /* Pods-OneSunChat-SnapKit-dummy.m */; };
+		AA1745164C29D841735712EB /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4004A4387E5C064CFFD6B2 /* SnapKit.swift */; };
+		BB70F74868BBC6F5FE7FFA84 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25DF7A3DF63836AC6564D07 /* Constraint.swift */; };
+		DF7108EFE1A2CC577A5D93AD /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF85106C0180DCB1FAD95 /* ConstraintDescription.swift */; };
+		EC4305C9561C7FD4CD7BB878 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B302E39E6EE53F0F95A637 /* ConstraintRelation.swift */; };
+		F1F4D5B9442A748350D8B8FF /* Pods-OneSunChat-SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D69BD748926248039C08E150 /* Pods-OneSunChat-SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8B2D33E18A9CF0560F3A268 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C6921D54CB4542D6B19CD /* ConstraintAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6CA18EA7AD3014CF89EC68B0 /* PBXContainerItemProxy */ = {
+		3E5F7F6171B457F6FE1D6EF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9C50BE4CCE7212B3B992BA73 /* Project object */;
+			containerPortal = 798C739B1BCCCDF11C2F9125 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B1088AA32A2B4CEE6E8AEAF9;
+			remoteGlobalIDString = BDC13330DE9797F62B5EC7E4;
 			remoteInfo = "Pods-OneSunChat-SnapKit";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F139D4F6765AA731595B6 /* Pods_OneSunChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSunChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0630B8F9B71F7909158FEDD6 /* Pods-OneSunChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSunChat.release.xcconfig"; sourceTree = "<group>"; };
-		0962D687E72431CD214EFEDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B360B1760014DAF6E9AEE2E /* Pods-OneSunChat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OneSunChat-frameworks.sh"; sourceTree = "<group>"; };
-		18CE9DC7854DFCE0DD49FB00 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1933745D50D9A7805ECBAC5E /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Source/EdgeInsets.swift; sourceTree = "<group>"; };
-		2373CBE4750094495E921C5F /* Pods-OneSunChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSunChat.debug.xcconfig"; sourceTree = "<group>"; };
-		2A840BC3FD954B8CE5DE1BB9 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		2DE78ABC16FE84535999E509 /* Pods-OneSunChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OneSunChat-acknowledgements.markdown"; sourceTree = "<group>"; };
-		50A5C9D4DFEC8CE97A9C81C0 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
-		51B498482CC0E362B58B5F83 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		587B087CB65EF3BE7B7648F0 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		5C4A6EA5A95EE1AA17E99502 /* Pods-OneSunChat-SnapKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSunChat-SnapKit-Private.xcconfig"; sourceTree = "<group>"; };
-		5E817EBF9ACBBA32DA573F1A /* Pods-OneSunChat-SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OneSunChat-SnapKit.modulemap"; sourceTree = "<group>"; };
-		62CE9A84F3212C16919B8949 /* Pods-OneSunChat-SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSunChat-SnapKit-prefix.pch"; sourceTree = "<group>"; };
-		6CD8F67B4BE1E545B6604736 /* Pods-OneSunChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OneSunChat-dummy.m"; sourceTree = "<group>"; };
-		7018F60C2561EA76B6F56D50 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		748E6144D2C9AE0E225D6E24 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		7803B17D6A4DD133BDB34336 /* Pods-OneSunChat-SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OneSunChat-SnapKit-dummy.m"; sourceTree = "<group>"; };
-		8943B53AA95397DA35B9BD73 /* Pods-OneSunChat-SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSunChat-SnapKit.xcconfig"; sourceTree = "<group>"; };
-		8F9424467C11C1E673195D63 /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
-		952EC24E986CC8C3109F5DF7 /* Pods-OneSunChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OneSunChat.modulemap"; sourceTree = "<group>"; };
-		9AF6A75943DE41646862FE73 /* Pods-OneSunChat-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSunChat-environment.h"; sourceTree = "<group>"; };
-		A66FCCE9ADE5A3921096F29B /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		B0516973781EA6B64BF5CDE6 /* SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapKit.swift; path = Source/SnapKit.swift; sourceTree = "<group>"; };
-		BA699218F4C2AAA30FED1048 /* Pods-OneSunChat-SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSunChat-SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		C7BBCBF968F36CE6BA1247EB /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
-		C99B0B270DE194C9AD250669 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D795D0CB0A2499983E763040 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+SnapKit.swift"; path = "Source/ViewController+SnapKit.swift"; sourceTree = "<group>"; };
-		E3F60A302F952366AFEADF75 /* Pods-OneSunChat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OneSunChat-resources.sh"; sourceTree = "<group>"; };
-		E81B637EBC07AF238D0DA521 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		F02645ED038D9B106F7FDA1F /* Pods-OneSunChat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSunChat-umbrella.h"; sourceTree = "<group>"; };
-		FA469506BE9CDA5CE88665C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFFD2EC26093248C398B4EC /* Pods-OneSunChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OneSunChat-acknowledgements.plist"; sourceTree = "<group>"; };
+		04057E29BC98A6F6A55C66FF /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		04CAAA28E86B2DC184D386B2 /* Pods-OneSunChat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OneSunChat-resources.sh"; sourceTree = "<group>"; };
+		09F545DF5F054DCB4B1B3768 /* Pods-OneSunChat-SnapKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSunChat-SnapKit-Private.xcconfig"; sourceTree = "<group>"; };
+		174AF37D6B57828519D53BA8 /* Pods-OneSunChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OneSunChat-acknowledgements.plist"; sourceTree = "<group>"; };
+		1D2E801BEFBF9B607A074A07 /* Pods-OneSunChat-SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSunChat-SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		1DEAEE94EDA91BB9C1B54FCB /* Pods-OneSunChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OneSunChat.modulemap"; sourceTree = "<group>"; };
+		29C393B0226F29AC119C3CF9 /* Pods-OneSunChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSunChat.release.xcconfig"; sourceTree = "<group>"; };
+		2B84D092652C97ED3318F035 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3546B60C3180C253C9F86AE2 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		3F4004A4387E5C064CFFD6B2 /* SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapKit.swift; path = Source/SnapKit.swift; sourceTree = "<group>"; };
+		47F93E1896562C003EBAE019 /* Pods-OneSunChat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSunChat-umbrella.h"; sourceTree = "<group>"; };
+		4D78DDB8C69CEA1943F10C18 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		642367DFE63D34F94EA96FB1 /* Pods-OneSunChat-SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OneSunChat-SnapKit-dummy.m"; sourceTree = "<group>"; };
+		6685F6D0E156630C913A81B5 /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
+		702FF85106C0180DCB1FAD95 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		7C3C6921D54CB4542D6B19CD /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		7E3389BC961C6DE94196BFA7 /* Pods-OneSunChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OneSunChat-dummy.m"; sourceTree = "<group>"; };
+		7F037E6BB1B80D4D083268AB /* Pods-OneSunChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OneSunChat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		84EEAF9883011EB44D782F9A /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		874EDCCC609EFB45FD608A9C /* Pods-OneSunChat-SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OneSunChat-SnapKit.modulemap"; sourceTree = "<group>"; };
+		88FE812D4020CBA1A8EF4318 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+SnapKit.swift"; path = "Source/ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		9119F5AC3C991261E666E529 /* Pods-OneSunChat-SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSunChat-SnapKit.xcconfig"; sourceTree = "<group>"; };
+		A0B302E39E6EE53F0F95A637 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		A29424F888872B086316AA8F /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Source/EdgeInsets.swift; sourceTree = "<group>"; };
+		BB3422EA37FEEE20B30D807C /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		BEC2911B0631D51A9C5F253C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC7184BA24E1A88601D8780 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25DF7A3DF63836AC6564D07 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		D69BD748926248039C08E150 /* Pods-OneSunChat-SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSunChat-SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		E7F44FA53F90B1752A3FBCB9 /* Pods-OneSunChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSunChat.debug.xcconfig"; sourceTree = "<group>"; };
+		F18A6BC22AFF54F0118050E4 /* Pods-OneSunChat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OneSunChat-frameworks.sh"; sourceTree = "<group>"; };
+		FAA3A051AFA35DBD012A507F /* Pods_OneSunChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSunChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8999A732C3ACC3C8207F2B /* Pods-OneSunChat-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSunChat-environment.h"; sourceTree = "<group>"; };
+		FF3E64EBB8976404A729FB87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8B5762D8636EDEE90FBE24FE /* Frameworks */ = {
+		84108430611DB2C76E5B8D29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E96620D720A6E5ECC049086 /* Foundation.framework in Frameworks */,
+				4D92713D906CBC5DD12783FB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A65C0EE731A6A2070F8D8221 /* Frameworks */ = {
+		FC7E6841A9EC418CCC863748 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68D817890E1EC665F0AD2342 /* Foundation.framework in Frameworks */,
+				2E9C4A0268F1121DF5B98ECE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E15DF4064D18FFF7E93EC79 = {
+		011458996B4C0231C4B099B2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				51B498482CC0E362B58B5F83 /* Podfile */,
-				F905229719BD0F8D02BBF762 /* Frameworks */,
-				AE9719EDEF0C79B9542B1288 /* Pods */,
-				6DDAA2B9403AE971C2E56F71 /* Products */,
-				7DE6ED421279AC94625DBECC /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		1BED565484F025F35257F63F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				C99B0B270DE194C9AD250669 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		4F2228AA77400BB07BABF664 /* Pods-OneSunChat */ = {
-			isa = PBXGroup;
-			children = (
-				FA469506BE9CDA5CE88665C7 /* Info.plist */,
-				952EC24E986CC8C3109F5DF7 /* Pods-OneSunChat.modulemap */,
-				2DE78ABC16FE84535999E509 /* Pods-OneSunChat-acknowledgements.markdown */,
-				FAFFD2EC26093248C398B4EC /* Pods-OneSunChat-acknowledgements.plist */,
-				6CD8F67B4BE1E545B6604736 /* Pods-OneSunChat-dummy.m */,
-				9AF6A75943DE41646862FE73 /* Pods-OneSunChat-environment.h */,
-				0B360B1760014DAF6E9AEE2E /* Pods-OneSunChat-frameworks.sh */,
-				E3F60A302F952366AFEADF75 /* Pods-OneSunChat-resources.sh */,
-				F02645ED038D9B106F7FDA1F /* Pods-OneSunChat-umbrella.h */,
-				2373CBE4750094495E921C5F /* Pods-OneSunChat.debug.xcconfig */,
-				0630B8F9B71F7909158FEDD6 /* Pods-OneSunChat.release.xcconfig */,
-			);
-			name = "Pods-OneSunChat";
-			path = "Target Support Files/Pods-OneSunChat";
-			sourceTree = "<group>";
-		};
-		6DDAA2B9403AE971C2E56F71 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				008F139D4F6765AA731595B6 /* Pods_OneSunChat.framework */,
-				18CE9DC7854DFCE0DD49FB00 /* SnapKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7DE6ED421279AC94625DBECC /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4F2228AA77400BB07BABF664 /* Pods-OneSunChat */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		8B4DC01B13B77B5D375E3E34 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0962D687E72431CD214EFEDA /* Info.plist */,
-				5E817EBF9ACBBA32DA573F1A /* Pods-OneSunChat-SnapKit.modulemap */,
-				8943B53AA95397DA35B9BD73 /* Pods-OneSunChat-SnapKit.xcconfig */,
-				5C4A6EA5A95EE1AA17E99502 /* Pods-OneSunChat-SnapKit-Private.xcconfig */,
-				7803B17D6A4DD133BDB34336 /* Pods-OneSunChat-SnapKit-dummy.m */,
-				62CE9A84F3212C16919B8949 /* Pods-OneSunChat-SnapKit-prefix.pch */,
-				BA699218F4C2AAA30FED1048 /* Pods-OneSunChat-SnapKit-umbrella.h */,
+				BEC2911B0631D51A9C5F253C /* Info.plist */,
+				874EDCCC609EFB45FD608A9C /* Pods-OneSunChat-SnapKit.modulemap */,
+				9119F5AC3C991261E666E529 /* Pods-OneSunChat-SnapKit.xcconfig */,
+				09F545DF5F054DCB4B1B3768 /* Pods-OneSunChat-SnapKit-Private.xcconfig */,
+				642367DFE63D34F94EA96FB1 /* Pods-OneSunChat-SnapKit-dummy.m */,
+				1D2E801BEFBF9B607A074A07 /* Pods-OneSunChat-SnapKit-prefix.pch */,
+				D69BD748926248039C08E150 /* Pods-OneSunChat-SnapKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-OneSunChat-SnapKit";
 			sourceTree = "<group>";
 		};
-		AE9719EDEF0C79B9542B1288 /* Pods */ = {
+		0B041379D2B41D12EB12F28F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C4C7F2650EE7616364D65F2C /* SnapKit */,
+				FF3E64EBB8976404A729FB87 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		23840D8C4411D9A710F552F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A32665B2A17C6289365508F2 /* SnapKit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C4C7F2650EE7616364D65F2C /* SnapKit */ = {
+		42F40B6B92173E8394D49F31 /* Pods-OneSunChat */ = {
 			isa = PBXGroup;
 			children = (
-				748E6144D2C9AE0E225D6E24 /* Constraint.swift */,
-				2A840BC3FD954B8CE5DE1BB9 /* ConstraintAttributes.swift */,
-				C7BBCBF968F36CE6BA1247EB /* ConstraintDescription.swift */,
-				E81B637EBC07AF238D0DA521 /* ConstraintItem.swift */,
-				587B087CB65EF3BE7B7648F0 /* ConstraintMaker.swift */,
-				A66FCCE9ADE5A3921096F29B /* ConstraintRelation.swift */,
-				50A5C9D4DFEC8CE97A9C81C0 /* Debugging.swift */,
-				1933745D50D9A7805ECBAC5E /* EdgeInsets.swift */,
-				7018F60C2561EA76B6F56D50 /* LayoutConstraint.swift */,
-				B0516973781EA6B64BF5CDE6 /* SnapKit.swift */,
-				8F9424467C11C1E673195D63 /* View+SnapKit.swift */,
-				D795D0CB0A2499983E763040 /* ViewController+SnapKit.swift */,
-				8B4DC01B13B77B5D375E3E34 /* Support Files */,
+				BEC7184BA24E1A88601D8780 /* Info.plist */,
+				1DEAEE94EDA91BB9C1B54FCB /* Pods-OneSunChat.modulemap */,
+				7F037E6BB1B80D4D083268AB /* Pods-OneSunChat-acknowledgements.markdown */,
+				174AF37D6B57828519D53BA8 /* Pods-OneSunChat-acknowledgements.plist */,
+				7E3389BC961C6DE94196BFA7 /* Pods-OneSunChat-dummy.m */,
+				FE8999A732C3ACC3C8207F2B /* Pods-OneSunChat-environment.h */,
+				F18A6BC22AFF54F0118050E4 /* Pods-OneSunChat-frameworks.sh */,
+				04CAAA28E86B2DC184D386B2 /* Pods-OneSunChat-resources.sh */,
+				47F93E1896562C003EBAE019 /* Pods-OneSunChat-umbrella.h */,
+				E7F44FA53F90B1752A3FBCB9 /* Pods-OneSunChat.debug.xcconfig */,
+				29C393B0226F29AC119C3CF9 /* Pods-OneSunChat.release.xcconfig */,
+			);
+			name = "Pods-OneSunChat";
+			path = "Target Support Files/Pods-OneSunChat";
+			sourceTree = "<group>";
+		};
+		7299298375B279E19E056BCD = {
+			isa = PBXGroup;
+			children = (
+				4D78DDB8C69CEA1943F10C18 /* Podfile */,
+				A581DFD862718648E2E5E520 /* Frameworks */,
+				23840D8C4411D9A710F552F9 /* Pods */,
+				E7FA89CDBC457193B50DDA0B /* Products */,
+				ED9C3C0BD0979E9817B9C89F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A32665B2A17C6289365508F2 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				C25DF7A3DF63836AC6564D07 /* Constraint.swift */,
+				7C3C6921D54CB4542D6B19CD /* ConstraintAttributes.swift */,
+				702FF85106C0180DCB1FAD95 /* ConstraintDescription.swift */,
+				3546B60C3180C253C9F86AE2 /* ConstraintItem.swift */,
+				84EEAF9883011EB44D782F9A /* ConstraintMaker.swift */,
+				A0B302E39E6EE53F0F95A637 /* ConstraintRelation.swift */,
+				04057E29BC98A6F6A55C66FF /* Debugging.swift */,
+				A29424F888872B086316AA8F /* EdgeInsets.swift */,
+				BB3422EA37FEEE20B30D807C /* LayoutConstraint.swift */,
+				3F4004A4387E5C064CFFD6B2 /* SnapKit.swift */,
+				6685F6D0E156630C913A81B5 /* View+SnapKit.swift */,
+				88FE812D4020CBA1A8EF4318 /* ViewController+SnapKit.swift */,
+				011458996B4C0231C4B099B2 /* Support Files */,
 			);
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		F905229719BD0F8D02BBF762 /* Frameworks */ = {
+		A581DFD862718648E2E5E520 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BED565484F025F35257F63F /* iOS */,
+				0B041379D2B41D12EB12F28F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7FA89CDBC457193B50DDA0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA3A051AFA35DBD012A507F /* Pods_OneSunChat.framework */,
+				2B84D092652C97ED3318F035 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED9C3C0BD0979E9817B9C89F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42F40B6B92173E8394D49F31 /* Pods-OneSunChat */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DA2AF8C07234A56E7B4C94F5 /* Headers */ = {
+		2118F4284B9F70C6D4C174D5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F88A84660A400E5CD3056275 /* Pods-OneSunChat-umbrella.h in Headers */,
+				F1F4D5B9442A748350D8B8FF /* Pods-OneSunChat-SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE7DB6636250DEB0C25BDD3E /* Headers */ = {
+		DFC9030C8A419C74F92AB27D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E37FCD7D4E7D8A0134BA7AED /* Pods-OneSunChat-SnapKit-umbrella.h in Headers */,
+				6F62181C71324C581DE4C208 /* Pods-OneSunChat-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		79ECF3411E3794F96AC1ABC8 /* Pods-OneSunChat */ = {
+		5B1914762FE642BE4B0A5FCD /* Pods-OneSunChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DC6FC71A343BAA617A38426 /* Build configuration list for PBXNativeTarget "Pods-OneSunChat" */;
+			buildConfigurationList = 06D4F8B5F0682DD6275D8E1D /* Build configuration list for PBXNativeTarget "Pods-OneSunChat" */;
 			buildPhases = (
-				C33ED0DA5DE3120AD361A138 /* Sources */,
-				8B5762D8636EDEE90FBE24FE /* Frameworks */,
-				DA2AF8C07234A56E7B4C94F5 /* Headers */,
+				558645BD759FB94BA4DCC0B0 /* Sources */,
+				FC7E6841A9EC418CCC863748 /* Frameworks */,
+				DFC9030C8A419C74F92AB27D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F3DE3C0EE4420C7A1624F3F /* PBXTargetDependency */,
+				39F528A0EC5E7729E5D53EC4 /* PBXTargetDependency */,
 			);
 			name = "Pods-OneSunChat";
 			productName = "Pods-OneSunChat";
-			productReference = 008F139D4F6765AA731595B6 /* Pods_OneSunChat.framework */;
+			productReference = FAA3A051AFA35DBD012A507F /* Pods_OneSunChat.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B1088AA32A2B4CEE6E8AEAF9 /* Pods-OneSunChat-SnapKit */ = {
+		BDC13330DE9797F62B5EC7E4 /* Pods-OneSunChat-SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9A9BDA6BD2E8A70D5FF5743 /* Build configuration list for PBXNativeTarget "Pods-OneSunChat-SnapKit" */;
+			buildConfigurationList = 146F409AA0BD79E5E70F2470 /* Build configuration list for PBXNativeTarget "Pods-OneSunChat-SnapKit" */;
 			buildPhases = (
-				E872970D7EB067F9B6F8D2CA /* Sources */,
-				A65C0EE731A6A2070F8D8221 /* Frameworks */,
-				EE7DB6636250DEB0C25BDD3E /* Headers */,
+				E864D789B024652D5D12AD9C /* Sources */,
+				84108430611DB2C76E5B8D29 /* Frameworks */,
+				2118F4284B9F70C6D4C174D5 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -254,78 +254,135 @@
 			);
 			name = "Pods-OneSunChat-SnapKit";
 			productName = "Pods-OneSunChat-SnapKit";
-			productReference = 18CE9DC7854DFCE0DD49FB00 /* SnapKit.framework */;
+			productReference = 2B84D092652C97ED3318F035 /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9C50BE4CCE7212B3B992BA73 /* Project object */ = {
+		798C739B1BCCCDF11C2F9125 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = C8965AAFA2ABE7352F52223F /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = F91F60F8C898B89756EB4054 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0E15DF4064D18FFF7E93EC79;
-			productRefGroup = 6DDAA2B9403AE971C2E56F71 /* Products */;
+			mainGroup = 7299298375B279E19E056BCD;
+			productRefGroup = E7FA89CDBC457193B50DDA0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79ECF3411E3794F96AC1ABC8 /* Pods-OneSunChat */,
-				B1088AA32A2B4CEE6E8AEAF9 /* Pods-OneSunChat-SnapKit */,
+				5B1914762FE642BE4B0A5FCD /* Pods-OneSunChat */,
+				BDC13330DE9797F62B5EC7E4 /* Pods-OneSunChat-SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C33ED0DA5DE3120AD361A138 /* Sources */ = {
+		558645BD759FB94BA4DCC0B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B72C3B97C9F31A5A2DB7006A /* Pods-OneSunChat-dummy.m in Sources */,
+				89660731D0F07A1C85BC9AA7 /* Pods-OneSunChat-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E872970D7EB067F9B6F8D2CA /* Sources */ = {
+		E864D789B024652D5D12AD9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6246DACDDE0BC5AA1B7D0A37 /* Constraint.swift in Sources */,
-				4DA32EEB3F0D127806CFF390 /* ConstraintAttributes.swift in Sources */,
-				ABD95814207B7B151AC5BCBF /* ConstraintDescription.swift in Sources */,
-				7030321F15813A2512B8CD98 /* ConstraintItem.swift in Sources */,
-				597C6172CEDF5A3CBA5DE2BF /* ConstraintMaker.swift in Sources */,
-				CFB41AE03C9AD23F0928EF27 /* ConstraintRelation.swift in Sources */,
-				5AC9B0AC6F72F00D434A123A /* Debugging.swift in Sources */,
-				652E7DF6175C5BE07C6951A6 /* EdgeInsets.swift in Sources */,
-				9C2B78A684179B25C6116FE2 /* LayoutConstraint.swift in Sources */,
-				D54D0DC691C6B29134B4B789 /* Pods-OneSunChat-SnapKit-dummy.m in Sources */,
-				F49630FB4065E5032645A946 /* SnapKit.swift in Sources */,
-				1049A0655849B9B5AE11A8E0 /* View+SnapKit.swift in Sources */,
-				95032CDA4B425CF606F92333 /* ViewController+SnapKit.swift in Sources */,
+				BB70F74868BBC6F5FE7FFA84 /* Constraint.swift in Sources */,
+				F8B2D33E18A9CF0560F3A268 /* ConstraintAttributes.swift in Sources */,
+				DF7108EFE1A2CC577A5D93AD /* ConstraintDescription.swift in Sources */,
+				43E03D11E5F4885C5CA22229 /* ConstraintItem.swift in Sources */,
+				67851C55629DC74678842C92 /* ConstraintMaker.swift in Sources */,
+				EC4305C9561C7FD4CD7BB878 /* ConstraintRelation.swift in Sources */,
+				3FE8F3D2C826A55A29303FA3 /* Debugging.swift in Sources */,
+				8A1AA6AA4E3FABF4E2CC9FA9 /* EdgeInsets.swift in Sources */,
+				5C6CD68545AEAFBAAE8A3E6B /* LayoutConstraint.swift in Sources */,
+				97A921AE7191F3E7934C46B1 /* Pods-OneSunChat-SnapKit-dummy.m in Sources */,
+				AA1745164C29D841735712EB /* SnapKit.swift in Sources */,
+				93FF019BA1002B49FBBE141F /* View+SnapKit.swift in Sources */,
+				0BD48E3DF2C319C6F38427EE /* ViewController+SnapKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2F3DE3C0EE4420C7A1624F3F /* PBXTargetDependency */ = {
+		39F528A0EC5E7729E5D53EC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-OneSunChat-SnapKit";
-			target = B1088AA32A2B4CEE6E8AEAF9 /* Pods-OneSunChat-SnapKit */;
-			targetProxy = 6CA18EA7AD3014CF89EC68B0 /* PBXContainerItemProxy */;
+			target = BDC13330DE9797F62B5EC7E4 /* Pods-OneSunChat-SnapKit */;
+			targetProxy = 3E5F7F6171B457F6FE1D6EF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		278E7BB9406985F71E989809 /* Debug */ = {
+		4B93A4EFE038E7C86DBD86EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7F44FA53F90B1752A3FBCB9 /* Pods-OneSunChat.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OneSunChat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-OneSunChat/Pods-OneSunChat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_OneSunChat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		760979FA9EABC381B2C1CADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F545DF5F054DCB4B1B3768 /* Pods-OneSunChat-SnapKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-OneSunChat-SnapKit/Pods-OneSunChat-SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-OneSunChat-SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-OneSunChat-SnapKit/Pods-OneSunChat-SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CE3D0DECDC2CE5F0372D2B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -364,36 +421,9 @@
 			};
 			name = Debug;
 		};
-		62FC6283B16A727990A8442B /* Release */ = {
+		CC864D07A5E4FFCA104EF9D6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C4A6EA5A95EE1AA17E99502 /* Pods-OneSunChat-SnapKit-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-OneSunChat-SnapKit/Pods-OneSunChat-SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-OneSunChat-SnapKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-OneSunChat-SnapKit/Pods-OneSunChat-SnapKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SnapKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		90253AA2E57398AAEBAF16D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0630B8F9B71F7909158FEDD6 /* Pods-OneSunChat.release.xcconfig */;
+			baseConfigurationReference = 29C393B0226F29AC119C3CF9 /* Pods-OneSunChat.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -420,7 +450,35 @@
 			};
 			name = Release;
 		};
-		B6832B865BAD4BEC94892730 /* Release */ = {
+		D0F0E339EC0E503579EECB0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F545DF5F054DCB4B1B3768 /* Pods-OneSunChat-SnapKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-OneSunChat-SnapKit/Pods-OneSunChat-SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-OneSunChat-SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-OneSunChat-SnapKit/Pods-OneSunChat-SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4E8B8CF5B9D66BC28980345 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -454,95 +512,37 @@
 			};
 			name = Release;
 		};
-		BCDD38503DA8C36A1F1DB8A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C4A6EA5A95EE1AA17E99502 /* Pods-OneSunChat-SnapKit-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-OneSunChat-SnapKit/Pods-OneSunChat-SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-OneSunChat-SnapKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-OneSunChat-SnapKit/Pods-OneSunChat-SnapKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SnapKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E226378B13E1CEF10BE821AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2373CBE4750094495E921C5F /* Pods-OneSunChat.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OneSunChat/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-OneSunChat/Pods-OneSunChat.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_OneSunChat;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DC6FC71A343BAA617A38426 /* Build configuration list for PBXNativeTarget "Pods-OneSunChat" */ = {
+		06D4F8B5F0682DD6275D8E1D /* Build configuration list for PBXNativeTarget "Pods-OneSunChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E226378B13E1CEF10BE821AC /* Debug */,
-				90253AA2E57398AAEBAF16D8 /* Release */,
+				4B93A4EFE038E7C86DBD86EE /* Debug */,
+				CC864D07A5E4FFCA104EF9D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9A9BDA6BD2E8A70D5FF5743 /* Build configuration list for PBXNativeTarget "Pods-OneSunChat-SnapKit" */ = {
+		146F409AA0BD79E5E70F2470 /* Build configuration list for PBXNativeTarget "Pods-OneSunChat-SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BCDD38503DA8C36A1F1DB8A7 /* Debug */,
-				62FC6283B16A727990A8442B /* Release */,
+				D0F0E339EC0E503579EECB0A /* Debug */,
+				760979FA9EABC381B2C1CADA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8965AAFA2ABE7352F52223F /* Build configuration list for PBXProject "Pods" */ = {
+		F91F60F8C898B89756EB4054 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				278E7BB9406985F71E989809 /* Debug */,
-				B6832B865BAD4BEC94892730 /* Release */,
+				9CE3D0DECDC2CE5F0372D2B3 /* Debug */,
+				F4E8B8CF5B9D66BC28980345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9C50BE4CCE7212B3B992BA73 /* Project object */;
+	rootObject = 798C739B1BCCCDF11C2F9125 /* Project object */;
 }

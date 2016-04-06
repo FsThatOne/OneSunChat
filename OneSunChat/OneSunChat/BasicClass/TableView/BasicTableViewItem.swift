@@ -9,5 +9,7 @@
 import UIKit
 
 class BasicTableViewItem: BasicDataModel {
-
+    var cellClass: String?
+    var cellStyle: UITableViewCellStyle = .Default
+    
 }

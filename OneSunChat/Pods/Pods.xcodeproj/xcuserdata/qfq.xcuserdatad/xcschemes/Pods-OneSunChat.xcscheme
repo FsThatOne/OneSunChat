@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "79ECF3411E3794F96AC1ABC8"
+               BlueprintIdentifier = "5B1914762FE642BE4B0A5FCD"
                BuildableName = "Pods_OneSunChat.framework"
                BlueprintName = "Pods-OneSunChat"
                ReferencedContainer = "container:Pods.xcodeproj">

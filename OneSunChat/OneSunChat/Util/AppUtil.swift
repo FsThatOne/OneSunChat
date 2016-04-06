@@ -10,4 +10,7 @@ import UIKit
 
 class AppUtil: NSObject {
     //应用级别设置和处理（消息的统一调度）
+    override init() {
+        
+    }
 }

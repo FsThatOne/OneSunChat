@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-OneSunChat-EaseMobSDK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-OneSunChat-SnapKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-OneSunChat.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>013D6BDAFCD56548452916D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B1914762FE642BE4B0A5FCD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC854B705C131AE273097EBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BDC13330DE9797F62B5EC7E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF2E4CFE70C16956EEC069D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -20,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
 
         
+        let dict = ["cellClass":"Amer"]
+        
+        let model = BasicTableViewItem(dict: dict)
+        
+        print(model.description)
+
+        
         doAppearanceSetting()
         return true
     }

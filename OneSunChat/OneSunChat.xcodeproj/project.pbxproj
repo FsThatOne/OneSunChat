@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7609D3791CAAA8F900329CCE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7609D3781CAAA8F900329CCE /* LocalAuthentication.framework */; };
 		B40B48001C76C61A003A0920 /* OneSunChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B47FF1C76C61A003A0920 /* OneSunChatTests.swift */; };
 		B40B480B1C76C61A003A0920 /* OneSunChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B480A1C76C61A003A0920 /* OneSunChatUITests.swift */; };
 		B40B48251C76D85B003A0920 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B48241C76D85B003A0920 /* BasicViewController.swift */; };
@@ -26,6 +27,11 @@
 		B4104BD41C7C7C5D00048F60 /* DataPersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4104BD01C7C7C5D00048F60 /* DataPersistentManager.swift */; };
 		B4104BD51C7C7C5D00048F60 /* UserUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4104BD11C7C7C5D00048F60 /* UserUtil.swift */; };
 		B4383EB81C7D4CF600633991 /* PublicDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4383EB71C7D4CF600633991 /* PublicDefine.swift */; };
+		B441E4B51C86B191003C4401 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441E4B41C86B191003C4401 /* BasicTableViewCell.swift */; };
+		B441E4B71C86B8A2003C4401 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441E4B61C86B8A2003C4401 /* ChatTableViewCell.swift */; };
+		B441E4BB1C86F37B003C4401 /* BasicTableViewGroupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441E4BA1C86F37B003C4401 /* BasicTableViewGroupItem.swift */; };
+		B441E4BD1C86FD54003C4401 /* BasicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441E4BC1C86FD54003C4401 /* BasicTableView.swift */; };
+		B462A59F1C8000DE00B47784 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462A59E1C8000DE00B47784 /* UIImage+Extension.swift */; };
 		CFB8ED58CFEEB822BE1F2B09 /* Pods_OneSunChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A29077E8B1D281B8CC3108 /* Pods_OneSunChat.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F01172FC1C8176450074FE0D /* AlbumListViewBkg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F01172FB1C8176450074FE0D /* AlbumListViewBkg.jpg */; };
 		F03F53BF1C7D6648004F05A5 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03F53BE1C7D6648004F05A5 /* QRCodeViewController.swift */; };
@@ -56,6 +62,7 @@
 		32A29077E8B1D281B8CC3108 /* Pods_OneSunChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSunChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1D66FA6E7811FB825011EA /* Pods-OneSunChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSunChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSunChat/Pods-OneSunChat.release.xcconfig"; sourceTree = "<group>"; };
 		6D753EB07537D653EC958AE3 /* Pods-OneSunChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSunChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSunChat/Pods-OneSunChat.debug.xcconfig"; sourceTree = "<group>"; };
+		7609D3781CAAA8F900329CCE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		B40B47E71C76C61A003A0920 /* OneSunChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSunChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40B47FB1C76C61A003A0920 /* OneSunChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneSunChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40B47FF1C76C61A003A0920 /* OneSunChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSunChatTests.swift; sourceTree = "<group>"; };
@@ -81,6 +88,11 @@
 		B4104BD01C7C7C5D00048F60 /* DataPersistentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPersistentManager.swift; sourceTree = "<group>"; };
 		B4104BD11C7C7C5D00048F60 /* UserUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUtil.swift; sourceTree = "<group>"; };
 		B4383EB71C7D4CF600633991 /* PublicDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicDefine.swift; sourceTree = "<group>"; };
+		B441E4B41C86B191003C4401 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
+		B441E4B61C86B8A2003C4401 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		B441E4BA1C86F37B003C4401 /* BasicTableViewGroupItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewGroupItem.swift; sourceTree = "<group>"; };
+		B441E4BC1C86FD54003C4401 /* BasicTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableView.swift; sourceTree = "<group>"; };
+		B462A59E1C8000DE00B47784 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		F01172FB1C8176450074FE0D /* AlbumListViewBkg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlbumListViewBkg.jpg; sourceTree = "<group>"; };
 		F03F53BE1C7D6648004F05A5 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		F03F53CE1C7F1C7F004F05A5 /* BasicWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicWebViewController.swift; path = TableView/BasicWebViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7609D3791CAAA8F900329CCE /* LocalAuthentication.framework in Frameworks */,
 				CFB8ED58CFEEB822BE1F2B09 /* Pods_OneSunChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +140,7 @@
 		84C09A45A03C2B864A928813 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7609D3781CAAA8F900329CCE /* LocalAuthentication.framework */,
 				32A29077E8B1D281B8CC3108 /* Pods_OneSunChat.framework */,
 			);
 			name = Frameworks;
@@ -188,6 +202,7 @@
 		B40B48181C76CFE0003A0920 /* Category（分类扩展） */ = {
 			isa = PBXGroup;
 			children = (
+				B462A59E1C8000DE00B47784 /* UIImage+Extension.swift */,
 			);
 			name = "Category（分类扩展）";
 			path = Category;
@@ -275,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				B40B48371C76E2D5003A0920 /* ChatViewController.swift */,
+				B441E4B61C86B8A2003C4401 /* ChatTableViewCell.swift */,
 			);
 			path = OSunChat;
 			sourceTree = "<group>";
@@ -301,6 +317,9 @@
 				B4104BBE1C7C65CB00048F60 /* BasicTableViewController.swift */,
 				B4104BC01C7C6A1600048F60 /* BasicTableViewDatasource.swift */,
 				B4104BC41C7C6CCC00048F60 /* BasicTableViewItem.swift */,
+				B441E4B41C86B191003C4401 /* BasicTableViewCell.swift */,
+				B441E4BA1C86F37B003C4401 /* BasicTableViewGroupItem.swift */,
+				B441E4BC1C86FD54003C4401 /* BasicTableView.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -497,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B441E4B51C86B191003C4401 /* BasicTableViewCell.swift in Sources */,
 				B4104BC31C7C6C8C00048F60 /* BasicDataModel.swift in Sources */,
 				F03F53CF1C7F1C7F004F05A5 /* BasicWebViewController.swift in Sources */,
 				B40B483A1C76E2EF003A0920 /* ContactViewController.swift in Sources */,
@@ -504,6 +524,8 @@
 				F03F53BF1C7D6648004F05A5 /* QRCodeViewController.swift in Sources */,
 				B4104BD41C7C7C5D00048F60 /* DataPersistentManager.swift in Sources */,
 				B40B48381C76E2D5003A0920 /* ChatViewController.swift in Sources */,
+				B441E4B71C86B8A2003C4401 /* ChatTableViewCell.swift in Sources */,
+				B441E4BB1C86F37B003C4401 /* BasicTableViewGroupItem.swift in Sources */,
 				B40B48401C76E3B0003A0920 /* BasicTabBarController.swift in Sources */,
 				B4104BD51C7C7C5D00048F60 /* UserUtil.swift in Sources */,
 				B40B483E1C76E30F003A0920 /* MineViewController.swift in Sources */,
@@ -512,11 +534,13 @@
 				B4104BD31C7C7C5D00048F60 /* CacheCenterManager.swift in Sources */,
 				B4104BD21C7C7C5D00048F60 /* AppUtil.swift in Sources */,
 				B4104BC51C7C6CCC00048F60 /* BasicTableViewItem.swift in Sources */,
+				B462A59F1C8000DE00B47784 /* UIImage+Extension.swift in Sources */,
 				B40B48361C76E26C003A0920 /* BasicNavigationController.swift in Sources */,
 				B4104BBF1C7C65CB00048F60 /* BasicTableViewController.swift in Sources */,
 				B40B48251C76D85B003A0920 /* BasicViewController.swift in Sources */,
 				B4104BC11C7C6A1600048F60 /* BasicTableViewDatasource.swift in Sources */,
 				F03F53D11C7F299D004F05A5 /* ShakeViewController.swift in Sources */,
+				B441E4BD1C86FD54003C4401 /* BasicTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +666,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = OneSunChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Amer.OneSunChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -657,7 +681,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = OneSunChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Amer.OneSunChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
