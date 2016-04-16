@@ -21,7 +21,7 @@ class BasicDataModel: NSObject, DataModelConfigProtocol{
         var outCount:UInt32 = 0
         let property_list = class_copyPropertyList(self.classForCoder, &outCount)
         var config: [String:String]? = nil
-        if self.respondsToSelector(Selector("configDict")) {
+        if self.respondsToSelector(#selector(configDict)) {
             config = self.configDict()
         }
         //遍历属性

@@ -19,7 +19,7 @@ class BasicViewController: UIViewController {
     // MARK: - lazyloading
     lazy var backBarButton: UIBarButtonItem = {
         let backImage:UIImage = UIImage(named: "back_nav_icon")!
-        var backBarButton = UIBarButtonItem(image: backImage, style: .Plain, target: self, action: Selector("backBarClick"))
+        var backBarButton = UIBarButtonItem(image: backImage, style: .Plain, target: self, action: #selector(backBarClick))
         return backBarButton
     }()
 }

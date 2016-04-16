@@ -8,6 +8,8 @@ target 'OneSunChat' do
 
 pod 'SnapKit'
 
+pod 'SVProgressHUD'
+
 end
 
 target 'OneSunChatTests' do

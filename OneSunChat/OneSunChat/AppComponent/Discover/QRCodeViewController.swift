@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import SnapKit
 
+
 enum scanType {
     case QRCode
     case BarCode
