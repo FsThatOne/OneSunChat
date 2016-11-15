@@ -19,7 +19,7 @@ class BasicViewController: UIViewController {
     // MARK: - lazyloading
     lazy var backBarButton: UIBarButtonItem = {
         let backImage:UIImage = UIImage(named: "back_nav_icon")!
-        var backBarButton = UIBarButtonItem(image: backImage, style: .Plain, target: self, action: #selector(backBarClick))
+        var backBarButton = UIBarButtonItem(image: backImage, style: .plain, target: self, action: #selector(backBarClick))
         return backBarButton
     }()
 }
@@ -34,9 +34,9 @@ extension BasicViewController{
             return
         }
         tabBarItem.image = UIImage(name: imageName!,
-            renderingMode: .AlwaysOriginal)
+            renderingMode: .alwaysOriginal)
         tabBarItem.selectedImage = UIImage(name: imageName! + "HL",
-            renderingMode: .AlwaysOriginal)
+            renderingMode: .alwaysOriginal)
     }
     
     convenience init(title: String, hiddenTabBar: Bool) {
@@ -50,7 +50,7 @@ extension BasicViewController{
 extension BasicViewController{
     func backBarClick(){
         if (self.navigationController != nil) {
-            self.navigationController?.popViewControllerAnimated(true)
+            self.navigationController!.popViewController(animated: true)
         }
     }
 }

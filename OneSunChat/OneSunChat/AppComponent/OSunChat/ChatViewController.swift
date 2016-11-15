@@ -17,32 +17,38 @@ class ChatViewController: BasicTableViewController {
         // TODO: - 测试代码
         dataSource.items =
             [
-            BasicTableViewGroupItem(dict:
-                ["subItems" :
-                    [
-                        BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0]),
-                        BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0]),BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0])]
+                BasicTableViewGroupItem(dict:
+                    ["subItems" :
+                        [
+                            BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0]),
+                            BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0]),
+                            BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0])
+                        ]
                     ]),
                 BasicTableViewGroupItem(dict:
                     ["subItems" :
                         [
                             BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0]),
-                            BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0]),BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0])]
+                            BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0]),
+                            BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0])
+                        ]
                     ]),
                 BasicTableViewGroupItem(dict:
                     ["subItems" :
                         [
                             BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0]),
-                            BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0]),BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0])]
+                            BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0]),
+                            BasicTableViewItem(dict: ["cellClass":"ChatTableViewCell","cellStyle":0])
+                        ]
                     ])
         ]
     }
-    
+    var textField: UITextView?
     
     lazy var dataSource: BasicTableViewDatasource = {
         let dataSource = BasicTableViewDatasource()
         dataSource.createCell = {() -> BasicTableViewCell in
-            return ChatTableViewCell(style: .Value1,
+            return ChatTableViewCell(style: .value1,
                            reuseIdentifier: "ChatTableViewCell")
         }
         return dataSource

@@ -13,7 +13,7 @@ class BasicTableView: UITableView {
         super.init(frame: frame, style: style)
         backgroundColor = kWhiteColor
         tableFooterView = UIView();
-        separatorStyle = .SingleLineEtched;
+        separatorStyle = .singleLineEtched;
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -17,7 +17,7 @@ class BasicTableViewController: BasicViewController {
     
     // MARK: - lazyloading
     lazy var tableView: BasicTableView = {
-        let tableView:BasicTableView = BasicTableView(frame: CGRectZero, style: UITableViewStyle.Plain)
+        let tableView:BasicTableView = BasicTableView(frame: CGRect.zero, style: UITableViewStyle.plain)
             
         return tableView
     }()

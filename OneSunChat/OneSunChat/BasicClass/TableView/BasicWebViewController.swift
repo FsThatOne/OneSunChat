@@ -16,11 +16,11 @@ class BasicWebViewController: BasicViewController {
         return web
     }()
     
-    var requestUrl: NSURL?
+    var requestUrl: URL?
     
     convenience init(title: String, url: String){
         self.init(title: title, imageName: nil)
-        requestUrl = NSURL(string: url)
+        requestUrl = URL(string: url)
     }
     
     override func viewDidLoad() {
@@ -29,9 +29,9 @@ class BasicWebViewController: BasicViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        webView.loadRequest(NSURLRequest(URL: requestUrl!))
+        webView.loadRequest(NSURLRequest(url: requestUrl!) as URLRequest)
     }
     
     override func didReceiveMemoryWarning() {

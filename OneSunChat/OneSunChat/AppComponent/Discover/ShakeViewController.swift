@@ -25,7 +25,7 @@ class ShakeViewController: BasicViewController, UITabBarDelegate {
     //tabbar
     lazy var tabbar: UITabBar = {
         let tabbar = UITabBar()
-        tabbar.barStyle = UIBarStyle.Black
+        tabbar.barStyle = UIBarStyle.black
         tabbar.tintColor = kTitleColor
         tabbar.delegate = self
         return tabbar
@@ -40,12 +40,12 @@ class ShakeViewController: BasicViewController, UITabBarDelegate {
     //摇一摇的中线
     lazy var upLine: UIImageView = {
         let imageVIew = UIImageView(image: UIImage(named: "Shake_Line_Up"))
-        imageVIew.hidden = true
+        imageVIew.isHidden = true
         return imageVIew
     }()
     lazy var downLIne: UIImageView = {
         let imageVIew = UIImageView(image: UIImage(named: "Shake_Line_Down"))
-        imageVIew.hidden = true
+        imageVIew.isHidden = true
         return imageVIew
     }()
     
@@ -70,27 +70,28 @@ class ShakeViewController: BasicViewController, UITabBarDelegate {
 // MARK: - 传感器方法
 extension ShakeViewController{
 
-    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
         //guard守护,保证动画进行时不再重新定义动画
         guard isShaking != true else{
             return
         }
         isShaking = true
         self.updateLineStatus()
-        let voiceURL = NSBundle.mainBundle().URLForResource("shake_sound", withExtension: "wav")
+        let voiceURL = Bundle.main.url(forResource: "shake_sound", withExtension: "wav")
         do{
-            try voiceMaker = AVAudioPlayer(contentsOfURL: voiceURL!)
+            let voiceMaker = try AVAudioPlayer(contentsOf: voiceURL!)
+            voiceMaker.play()
         } catch{
             print("Error de reproducccion")
         }
-        voiceMaker.play()
+
         // TODO: - 这里放摇一摇的逻辑
 
-        UIView.animateWithDuration(0.35, animations: {
-            self.updateConstraints(.startShake)
+        UIView.animate(withDuration: 0.35, animations: {
+            self.updateConstraints(type: .startShake)
         }) { (isFinished) in
-            UIView.animateWithDuration(0.35, delay: 0.4, options: UIViewAnimationOptions.LayoutSubviews, animations: {
-                self.updateConstraints(.stopShake)
+            UIView.animate(withDuration: 0.35, delay: 0.4, options: UIViewAnimationOptions.layoutSubviews, animations: {
+                self.updateConstraints(type: .stopShake)
                 }, completion: { (isFinished) in
                     self.isShaking = false
                     self.updateLineStatus()
@@ -117,39 +118,39 @@ extension ShakeViewController{
     
     //中间的线是否显示
     func updateLineStatus(){
-        upLine.hidden = !upLine.hidden
-        downLIne.hidden = !downLIne.hidden
+        upLine.isHidden = !upLine.isHidden
+        downLIne.isHidden = !downLIne.isHidden
     }
     
     //添加约束
     func addConstraints() {
-        tabbar.snp_makeConstraints { (make) in
-            make.left.equalTo(view.snp_left)
-            make.right.equalTo(view.snp_right)
-            make.bottom.equalTo(view.snp_bottom)
+        tabbar.snp.makeConstraints { (make) in
+            make.left.equalTo(view.snp.left)
+            make.right.equalTo(view.snp.right)
+            make.bottom.equalTo(view.snp.bottom)
             make.height.equalTo(70)
         }
-        shakeUpImage.snp_makeConstraints { (make) in
-            make.bottom.equalTo(view.snp_centerY)
-            make.centerX.equalTo(view.snp_centerX)
+        shakeUpImage.snp.makeConstraints { (make) in
+            make.bottom.equalTo(view.snp.centerY)
+            make.centerX.equalTo(view.snp.centerX)
             make.width.equalTo(225)
             make.height.equalTo(120)
         }
-        shakeDownImage.snp_makeConstraints { (make) in
-            make.top.equalTo(view.snp_centerY)
-            make.centerX.equalTo(view.snp_centerX)
+        shakeDownImage.snp.makeConstraints { (make) in
+            make.top.equalTo(view.snp.centerY)
+            make.centerX.equalTo(view.snp.centerX)
             make.width.equalTo(225)
             make.height.equalTo(120)
         }
-        upLine.snp_updateConstraints { (make) in
-            make.centerX.equalTo(view.snp_centerX)
-            make.centerY.equalTo(shakeUpImage.snp_bottom)
+        upLine.snp.updateConstraints { (make) in
+            make.centerX.equalTo(view.snp.centerX)
+            make.centerY.equalTo(shakeUpImage.snp.bottom)
             make.width.equalTo(kScreenWidth)
             make.height.equalTo(3)
         }
-        downLIne.snp_updateConstraints { (make) in
-            make.centerX.equalTo(view.snp_centerX)
-            make.centerY.equalTo(shakeDownImage.snp_top)
+        downLIne.snp.updateConstraints { (make) in
+            make.centerX.equalTo(view.snp.centerX)
+            make.centerY.equalTo(shakeDownImage.snp.top)
             make.width.equalTo(kScreenWidth)
             make.height.equalTo(3)
         }
@@ -159,18 +160,18 @@ extension ShakeViewController{
     func updateConstraints(type: shakeType){
         switch type {
         case .startShake:
-            shakeUpImage.snp_updateConstraints { (make) in
-                make.bottom.equalTo(view.snp_centerY).offset(-75.0)
+            shakeUpImage.snp.updateConstraints { (make) in
+                make.bottom.equalTo(view.snp.centerY).offset(-75.0)
             }
-            shakeDownImage.snp_updateConstraints { (make) in
-                make.top.equalTo(view.snp_centerY).offset(75)
+            shakeDownImage.snp.updateConstraints { (make) in
+                make.top.equalTo(view.snp.centerY).offset(75)
             }
         default:
-            shakeUpImage.snp_updateConstraints { (make) in
-                make.bottom.equalTo(view.snp_centerY)
+            shakeUpImage.snp.updateConstraints { (make) in
+                make.bottom.equalTo(view.snp.centerY)
             }
-            shakeDownImage.snp_updateConstraints { (make) in
-                make.top.equalTo(view.snp_centerY)
+            shakeDownImage.snp.updateConstraints { (make) in
+                make.top.equalTo(view.snp.centerY)
             }
         }
         view.layoutIfNeeded()

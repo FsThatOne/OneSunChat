@@ -12,8 +12,8 @@ class MineViewController: BasicViewController, UITableViewDataSource, UITableVie
     // MARK: - layout
     
     override func loadView() {
-        let tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: UITableViewStyle.Grouped)
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "mineCell")
+        let tableView = UITableView(frame: UIScreen.main.bounds, style: UITableViewStyle.grouped)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "mineCell")
         tableView.delegate = self
         tableView.dataSource = self
         view = tableView
@@ -31,7 +31,7 @@ extension MineViewController{
         return 4
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 1:
             return 4
@@ -40,7 +40,7 @@ extension MineViewController{
         }
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
             return 80
         }
@@ -55,16 +55,16 @@ extension MineViewController{
         return 5
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("mineCell")!
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "mineCell")!
+        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         let cellText : String?
         let cellImageName : String?
         switch indexPath.section {
         case 0:
-            let firstCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "mineFirstCell")
-            firstCell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
-            firstCell.textLabel?.attributedText = NSAttributedString(string: "朋友圈", attributes: [NSFontAttributeName : UIFont.systemFontOfSize(16)])
+            let firstCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "mineFirstCell")
+            firstCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+            firstCell.textLabel?.attributedText = NSAttributedString(string: "朋友圈", attributes: [NSFontAttributeName : UIFont.systemFont(ofSize: 16)])
             firstCell.detailTextLabel?.text = "你是谁"
             let photoView = UIImageView(image: UIImage(named: "dis_IconFriend"))
             photoView.frame = CGRect(x: kScreenWidth - 70, y: 25, width: 30, height: 30)
@@ -94,8 +94,8 @@ extension MineViewController{
             cellImageName = "Bottle"
         }
         cell.imageView?.image = UIImage(named: "dis_Icon" + cellImageName!)
-        cell.textLabel?.attributedText = NSAttributedString(string: cellText!, attributes: [NSFontAttributeName : UIFont.systemFontOfSize(16)])
-        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.textLabel?.attributedText = NSAttributedString(string: cellText!, attributes: [NSFontAttributeName : UIFont.systemFont(ofSize: 16)])
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
         
     }

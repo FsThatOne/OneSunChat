@@ -1,1830 +1,923 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>32A29077E8B1D281B8CC3108</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_OneSunChat.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3A1D66FA6E7811FB825011EA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-OneSunChat.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-OneSunChat/Pods-OneSunChat.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C4570B0D082F873C756B4C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6D753EB07537D653EC958AE3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-OneSunChat.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-OneSunChat/Pods-OneSunChat.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7609D3781CAAA8F900329CCE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>LocalAuthentication.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/LocalAuthentication.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>7609D3791CAAA8F900329CCE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7609D3781CAAA8F900329CCE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>82678348FD1BD08E13CDCF0A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6D753EB07537D653EC958AE3</string>
-				<string>3A1D66FA6E7811FB825011EA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>84C09A45A03C2B864A928813</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7609D3781CAAA8F900329CCE</string>
-				<string>32A29077E8B1D281B8CC3108</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B47DE1C76C61A003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B40B47E91C76C61A003A0920</string>
-				<string>B40B47FE1C76C61A003A0920</string>
-				<string>B40B48091C76C61A003A0920</string>
-				<string>B40B47E81C76C61A003A0920</string>
-				<string>82678348FD1BD08E13CDCF0A</string>
-				<string>84C09A45A03C2B864A928813</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B47DF1C76C61A003A0920</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>&#21016;ToTo</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>B40B47E61C76C61A003A0920</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-					</dict>
-					<key>B40B47FA1C76C61A003A0920</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>B40B47E61C76C61A003A0920</string>
-					</dict>
-					<key>B40B48051C76C61A003A0920</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>B40B47E61C76C61A003A0920</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>B40B47E21C76C61A003A0920</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>B40B47DE1C76C61A003A0920</string>
-			<key>productRefGroup</key>
-			<string>B40B47E81C76C61A003A0920</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>B40B47E61C76C61A003A0920</string>
-				<string>B40B47FA1C76C61A003A0920</string>
-				<string>B40B48051C76C61A003A0920</string>
-			</array>
-		</dict>
-		<key>B40B47E21C76C61A003A0920</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B40B480D1C76C61A003A0920</string>
-				<string>B40B480E1C76C61A003A0920</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B40B47E31C76C61A003A0920</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B441E4B51C86B191003C4401</string>
-				<string>B4104BC31C7C6C8C00048F60</string>
-				<string>F03F53CF1C7F1C7F004F05A5</string>
-				<string>B40B483A1C76E2EF003A0920</string>
-				<string>B40B482F1C76DCE8003A0920</string>
-				<string>F03F53BF1C7D6648004F05A5</string>
-				<string>B4104BD41C7C7C5D00048F60</string>
-				<string>B40B48381C76E2D5003A0920</string>
-				<string>B441E4B71C86B8A2003C4401</string>
-				<string>B441E4BB1C86F37B003C4401</string>
-				<string>B40B48401C76E3B0003A0920</string>
-				<string>B4104BD51C7C7C5D00048F60</string>
-				<string>B40B483E1C76E30F003A0920</string>
-				<string>B4383EB81C7D4CF600633991</string>
-				<string>B40B483C1C76E300003A0920</string>
-				<string>B4104BD31C7C7C5D00048F60</string>
-				<string>B4104BD21C7C7C5D00048F60</string>
-				<string>B4104BC51C7C6CCC00048F60</string>
-				<string>B462A59F1C8000DE00B47784</string>
-				<string>B40B48361C76E26C003A0920</string>
-				<string>B4104BBF1C7C65CB00048F60</string>
-				<string>B40B48251C76D85B003A0920</string>
-				<string>B4104BC11C7C6A1600048F60</string>
-				<string>F03F53D11C7F299D004F05A5</string>
-				<string>B441E4BD1C86FD54003C4401</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B40B47E41C76C61A003A0920</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7609D3791CAAA8F900329CCE</string>
-				<string>CFB8ED58CFEEB822BE1F2B09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B40B47E51C76C61A003A0920</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F03F54701C7F2CA3004F05A5</string>
-				<string>F03F54741C805DCD004F05A5</string>
-				<string>F01172FC1C8176450074FE0D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B40B47E61C76C61A003A0920</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B40B480F1C76C61A003A0920</string>
-			<key>buildPhases</key>
-			<array>
-				<string>5C4570B0D082F873C756B4C2</string>
-				<string>B40B47E31C76C61A003A0920</string>
-				<string>B40B47E41C76C61A003A0920</string>
-				<string>B40B47E51C76C61A003A0920</string>
-				<string>D81B258CF00669245E956FF2</string>
-				<string>BA584FFE9D98849048ABB5B9</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>OneSunChat</string>
-			<key>productName</key>
-			<string>OneSunChat</string>
-			<key>productReference</key>
-			<string>B40B47E71C76C61A003A0920</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>B40B47E71C76C61A003A0920</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>OneSunChat.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B40B47E81C76C61A003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B40B47E71C76C61A003A0920</string>
-				<string>B40B47FB1C76C61A003A0920</string>
-				<string>B40B48061C76C61A003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B47E91C76C61A003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B40B481B1C76CFF0003A0920</string>
-				<string>B40B48181C76CFE0003A0920</string>
-				<string>B40B481A1C76CFF0003A0920</string>
-				<string>B40B48211C76D490003A0920</string>
-				<string>B40B48191C76CFF0003A0920</string>
-				<string>B40B481C1C76D050003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OneSunChat</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B47F71C76C61A003A0920</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B40B48001C76C61A003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B40B47F81C76C61A003A0920</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B40B47F91C76C61A003A0920</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B40B47FA1C76C61A003A0920</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B40B48121C76C61A003A0920</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B40B47F71C76C61A003A0920</string>
-				<string>B40B47F81C76C61A003A0920</string>
-				<string>B40B47F91C76C61A003A0920</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>B40B47FD1C76C61A003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>OneSunChatTests</string>
-			<key>productName</key>
-			<string>OneSunChatTests</string>
-			<key>productReference</key>
-			<string>B40B47FB1C76C61A003A0920</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>B40B47FB1C76C61A003A0920</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>OneSunChatTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B40B47FC1C76C61A003A0920</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>B40B47DF1C76C61A003A0920</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B40B47E61C76C61A003A0920</string>
-			<key>remoteInfo</key>
-			<string>OneSunChat</string>
-		</dict>
-		<key>B40B47FD1C76C61A003A0920</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>B40B47E61C76C61A003A0920</string>
-			<key>targetProxy</key>
-			<string>B40B47FC1C76C61A003A0920</string>
-		</dict>
-		<key>B40B47FE1C76C61A003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B40B47FF1C76C61A003A0920</string>
-				<string>B40B48011C76C61A003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OneSunChatTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B47FF1C76C61A003A0920</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>OneSunChatTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B48001C76C61A003A0920</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B47FF1C76C61A003A0920</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40B48011C76C61A003A0920</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B48021C76C61A003A0920</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B40B480B1C76C61A003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B40B48031C76C61A003A0920</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B40B48041C76C61A003A0920</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B40B48051C76C61A003A0920</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B40B48151C76C61A003A0920</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B40B48021C76C61A003A0920</string>
-				<string>B40B48031C76C61A003A0920</string>
-				<string>B40B48041C76C61A003A0920</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>B40B48081C76C61A003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>OneSunChatUITests</string>
-			<key>productName</key>
-			<string>OneSunChatUITests</string>
-			<key>productReference</key>
-			<string>B40B48061C76C61A003A0920</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>B40B48061C76C61A003A0920</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>OneSunChatUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B40B48071C76C61A003A0920</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>B40B47DF1C76C61A003A0920</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B40B47E61C76C61A003A0920</string>
-			<key>remoteInfo</key>
-			<string>OneSunChat</string>
-		</dict>
-		<key>B40B48081C76C61A003A0920</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>B40B47E61C76C61A003A0920</string>
-			<key>targetProxy</key>
-			<string>B40B48071C76C61A003A0920</string>
-		</dict>
-		<key>B40B48091C76C61A003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B40B480A1C76C61A003A0920</string>
-				<string>B40B480C1C76C61A003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OneSunChatUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B480A1C76C61A003A0920</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>OneSunChatUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B480B1C76C61A003A0920</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B480A1C76C61A003A0920</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40B480C1C76C61A003A0920</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B480D1C76C61A003A0920</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B40B480E1C76C61A003A0920</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B40B480F1C76C61A003A0920</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B40B48101C76C61A003A0920</string>
-				<string>B40B48111C76C61A003A0920</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B40B48101C76C61A003A0920</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6D753EB07537D653EC958AE3</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>Brand Assets</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OneSunChat/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.Amer.OneSunChat</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B40B48111C76C61A003A0920</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3A1D66FA6E7811FB825011EA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>Brand Assets</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OneSunChat/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.Amer.OneSunChat</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B40B48121C76C61A003A0920</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B40B48131C76C61A003A0920</string>
-				<string>B40B48141C76C61A003A0920</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B40B48131C76C61A003A0920</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OneSunChatTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.Amer.OneSunChatTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/OneSunChat.app/OneSunChat</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B40B48141C76C61A003A0920</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OneSunChatTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.Amer.OneSunChatTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/OneSunChat.app/OneSunChat</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B40B48151C76C61A003A0920</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B40B48161C76C61A003A0920</string>
-				<string>B40B48171C76C61A003A0920</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B40B48161C76C61A003A0920</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>OneSunChatUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.Amer.OneSunChatUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>OneSunChat</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B40B48171C76C61A003A0920</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>OneSunChatUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.Amer.OneSunChatUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>OneSunChat</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B40B48181C76CFE0003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B462A59E1C8000DE00B47784</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Category&#65288;&#20998;&#31867;&#25193;&#23637;&#65289;</string>
-			<key>path</key>
-			<string>Category</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B48191C76CFF0003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B40B48201C76D2C3003A0920</string>
-				<string>B40B481D1C76D2C3003A0920</string>
-				<string>B40B481E1C76D2C3003A0920</string>
-				<string>B40B481F1C76D2C3003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AppComponent&#65288;&#24212;&#29992;&#32423;&#32452;&#20214;&#65289;</string>
-			<key>path</key>
-			<string>AppComponent</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B481A1C76CFF0003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B4104BBD1C7C64CC00048F60</string>
-				<string>B40B48241C76D85B003A0920</string>
-				<string>F03F53CE1C7F1C7F004F05A5</string>
-				<string>B40B48351C76E26C003A0920</string>
-				<string>B40B483F1C76E3B0003A0920</string>
-				<string>B4104BC21C7C6C8C00048F60</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>BasicClass&#65288;&#24212;&#29992;&#22522;&#31867;&#65289;</string>
-			<key>path</key>
-			<string>BasicClass</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B481B1C76CFF0003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B4104BCE1C7C7C5D00048F60</string>
-				<string>B4104BCF1C7C7C5D00048F60</string>
-				<string>B4104BD01C7C7C5D00048F60</string>
-				<string>B4104BD11C7C7C5D00048F60</string>
-				<string>B4383EB71C7D4CF600633991</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Util(&#24037;&#20855;)</string>
-			<key>path</key>
-			<string>Util</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B481C1C76D050003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F03F54721C805DCD004F05A5</string>
-				<string>F03F546F1C7F2CA3004F05A5</string>
-				<string>B40B48261C76DCE8003A0920</string>
-				<string>B40B48281C76DCE8003A0920</string>
-				<string>B40B482D1C76DCE8003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting</string>
-			<key>path</key>
-			<string>OneSunChat/Supporting</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B40B481D1C76D2C3003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B40B48391C76E2EF003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Contact</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B481E1C76D2C3003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B40B483B1C76E300003A0920</string>
-				<string>F03F53BE1C7D6648004F05A5</string>
-				<string>F03F53D01C7F299D004F05A5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Discover</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B481F1C76D2C3003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B40B483D1C76E30F003A0920</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Mine</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B48201C76D2C3003A0920</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B40B48371C76E2D5003A0920</string>
-				<string>B441E4B61C86B8A2003C4401</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OSunChat</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B48211C76D490003A0920</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CustomComponent&#65288;&#33258;&#23450;&#20041;&#32452;&#20214;&#65289;</string>
-			<key>path</key>
-			<string>CustomComponent</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B48241C76D85B003A0920</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasicViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B48251C76D85B003A0920</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B48241C76D85B003A0920</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40B48261C76DCE8003A0920</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>AppDelegate.swift</string>
-			<key>path</key>
-			<string>OneSunChat/AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B40B48281C76DCE8003A0920</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Base.lproj</string>
-			<key>path</key>
-			<string>OneSunChat/Base.lproj</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B40B482D1C76DCE8003A0920</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>name</key>
-			<string>Info.plist</string>
-			<key>path</key>
-			<string>OneSunChat/Info.plist</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B40B482F1C76DCE8003A0920</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B48261C76DCE8003A0920</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40B48351C76E26C003A0920</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasicNavigationController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B48361C76E26C003A0920</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B48351C76E26C003A0920</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40B48371C76E2D5003A0920</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ChatViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B48381C76E2D5003A0920</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B48371C76E2D5003A0920</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40B48391C76E2EF003A0920</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ContactViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B483A1C76E2EF003A0920</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B48391C76E2EF003A0920</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40B483B1C76E300003A0920</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DiscoverViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B483C1C76E300003A0920</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B483B1C76E300003A0920</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40B483D1C76E30F003A0920</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MineViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B483E1C76E30F003A0920</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B483D1C76E30F003A0920</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40B483F1C76E3B0003A0920</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasicTabBarController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B40B48401C76E3B0003A0920</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B483F1C76E3B0003A0920</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4104BBD1C7C64CC00048F60</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B4104BBE1C7C65CB00048F60</string>
-				<string>B4104BC01C7C6A1600048F60</string>
-				<string>B4104BC41C7C6CCC00048F60</string>
-				<string>B441E4B41C86B191003C4401</string>
-				<string>B441E4BA1C86F37B003C4401</string>
-				<string>B441E4BC1C86FD54003C4401</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TableView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4104BBE1C7C65CB00048F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasicTableViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4104BBF1C7C65CB00048F60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4104BBE1C7C65CB00048F60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4104BC01C7C6A1600048F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasicTableViewDatasource.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4104BC11C7C6A1600048F60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4104BC01C7C6A1600048F60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4104BC21C7C6C8C00048F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasicDataModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4104BC31C7C6C8C00048F60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4104BC21C7C6C8C00048F60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4104BC41C7C6CCC00048F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasicTableViewItem.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4104BC51C7C6CCC00048F60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4104BC41C7C6CCC00048F60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4104BCE1C7C7C5D00048F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppUtil.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4104BCF1C7C7C5D00048F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CacheCenterManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4104BD01C7C7C5D00048F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DataPersistentManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4104BD11C7C7C5D00048F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UserUtil.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4104BD21C7C7C5D00048F60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4104BCE1C7C7C5D00048F60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4104BD31C7C7C5D00048F60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4104BCF1C7C7C5D00048F60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4104BD41C7C7C5D00048F60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4104BD01C7C7C5D00048F60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4104BD51C7C7C5D00048F60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4104BD11C7C7C5D00048F60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4383EB71C7D4CF600633991</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>PublicDefine.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4383EB81C7D4CF600633991</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4383EB71C7D4CF600633991</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B441E4B41C86B191003C4401</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasicTableViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B441E4B51C86B191003C4401</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B441E4B41C86B191003C4401</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B441E4B61C86B8A2003C4401</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ChatTableViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B441E4B71C86B8A2003C4401</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B441E4B61C86B8A2003C4401</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B441E4BA1C86F37B003C4401</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasicTableViewGroupItem.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B441E4BB1C86F37B003C4401</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B441E4BA1C86F37B003C4401</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B441E4BC1C86FD54003C4401</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BasicTableView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B441E4BD1C86FD54003C4401</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B441E4BC1C86FD54003C4401</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B462A59E1C8000DE00B47784</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UIImage+Extension.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B462A59F1C8000DE00B47784</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B462A59E1C8000DE00B47784</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BA584FFE9D98849048ABB5B9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-OneSunChat/Pods-OneSunChat-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>CFB8ED58CFEEB822BE1F2B09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32A29077E8B1D281B8CC3108</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D81B258CF00669245E956FF2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-OneSunChat/Pods-OneSunChat-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F01172FB1C8176450074FE0D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>AlbumListViewBkg.jpg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F01172FC1C8176450074FE0D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F01172FB1C8176450074FE0D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F03F53BE1C7D6648004F05A5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>QRCodeViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F03F53BF1C7D6648004F05A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F03F53BE1C7D6648004F05A5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F03F53CE1C7F1C7F004F05A5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>BasicWebViewController.swift</string>
-			<key>path</key>
-			<string>TableView/BasicWebViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F03F53CF1C7F1C7F004F05A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F03F53CE1C7F1C7F004F05A5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F03F53D01C7F299D004F05A5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ShakeViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F03F53D11C7F299D004F05A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F03F53D01C7F299D004F05A5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F03F546F1C7F2CA3004F05A5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>name</key>
-			<string>Assets.xcassets</string>
-			<key>path</key>
-			<string>OneSunChat/Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F03F54701C7F2CA3004F05A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F03F546F1C7F2CA3004F05A5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F03F54721C805DCD004F05A5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F01172FB1C8176450074FE0D</string>
-				<string>F03F54731C805DCD004F05A5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Sources</string>
-			<key>path</key>
-			<string>OneSunChat/Sources</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F03F54731C805DCD004F05A5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>audio.wav</string>
-			<key>path</key>
-			<string>shake_sound.wav</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F03F54741C805DCD004F05A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F03F54731C805DCD004F05A5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>B40B47DF1C76C61A003A0920</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CA19335307BC6D8A733E279 /* Pods_OneSunChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CD9C7832CF64C173DA9A4D /* Pods_OneSunChatUITests.framework */; };
+		7609D3791CAAA8F900329CCE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7609D3781CAAA8F900329CCE /* LocalAuthentication.framework */; };
+		94795098D93B90D9155062E9 /* Pods_OneSunChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2862792111328EA5F4F0CE22 /* Pods_OneSunChat.framework */; };
+		B40B48001C76C61A003A0920 /* OneSunChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B47FF1C76C61A003A0920 /* OneSunChatTests.swift */; };
+		B40B480B1C76C61A003A0920 /* OneSunChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B480A1C76C61A003A0920 /* OneSunChatUITests.swift */; };
+		B40B48251C76D85B003A0920 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B48241C76D85B003A0920 /* BasicViewController.swift */; };
+		B40B482F1C76DCE8003A0920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B48261C76DCE8003A0920 /* AppDelegate.swift */; };
+		B40B48361C76E26C003A0920 /* BasicNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B48351C76E26C003A0920 /* BasicNavigationController.swift */; };
+		B40B48381C76E2D5003A0920 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B48371C76E2D5003A0920 /* ChatViewController.swift */; };
+		B40B483A1C76E2EF003A0920 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B48391C76E2EF003A0920 /* ContactViewController.swift */; };
+		B40B483C1C76E300003A0920 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B483B1C76E300003A0920 /* DiscoverViewController.swift */; };
+		B40B483E1C76E30F003A0920 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B483D1C76E30F003A0920 /* MineViewController.swift */; };
+		B40B48401C76E3B0003A0920 /* BasicTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40B483F1C76E3B0003A0920 /* BasicTabBarController.swift */; };
+		B4104BBF1C7C65CB00048F60 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4104BBE1C7C65CB00048F60 /* BasicTableViewController.swift */; };
+		B4104BC11C7C6A1600048F60 /* BasicTableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4104BC01C7C6A1600048F60 /* BasicTableViewDatasource.swift */; };
+		B4104BC31C7C6C8C00048F60 /* BasicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4104BC21C7C6C8C00048F60 /* BasicDataModel.swift */; };
+		B4104BC51C7C6CCC00048F60 /* BasicTableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4104BC41C7C6CCC00048F60 /* BasicTableViewItem.swift */; };
+		B4104BD21C7C7C5D00048F60 /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4104BCE1C7C7C5D00048F60 /* AppUtil.swift */; };
+		B4104BD31C7C7C5D00048F60 /* CacheCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4104BCF1C7C7C5D00048F60 /* CacheCenterManager.swift */; };
+		B4104BD41C7C7C5D00048F60 /* DataPersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4104BD01C7C7C5D00048F60 /* DataPersistentManager.swift */; };
+		B4104BD51C7C7C5D00048F60 /* UserUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4104BD11C7C7C5D00048F60 /* UserUtil.swift */; };
+		B4383EB81C7D4CF600633991 /* PublicDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4383EB71C7D4CF600633991 /* PublicDefine.swift */; };
+		B441E4B51C86B191003C4401 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441E4B41C86B191003C4401 /* BasicTableViewCell.swift */; };
+		B441E4B71C86B8A2003C4401 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441E4B61C86B8A2003C4401 /* ChatTableViewCell.swift */; };
+		B441E4BB1C86F37B003C4401 /* BasicTableViewGroupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441E4BA1C86F37B003C4401 /* BasicTableViewGroupItem.swift */; };
+		B441E4BD1C86FD54003C4401 /* BasicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441E4BC1C86FD54003C4401 /* BasicTableView.swift */; };
+		B462A59F1C8000DE00B47784 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462A59E1C8000DE00B47784 /* UIImage+Extension.swift */; };
+		BA9857422E8B10B29ACBFB7C /* Pods_OneSunChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB2CBDD04656014ABB14525 /* Pods_OneSunChatTests.framework */; };
+		F01172FC1C8176450074FE0D /* AlbumListViewBkg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F01172FB1C8176450074FE0D /* AlbumListViewBkg.jpg */; };
+		F03F53BF1C7D6648004F05A5 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03F53BE1C7D6648004F05A5 /* QRCodeViewController.swift */; };
+		F03F53CF1C7F1C7F004F05A5 /* BasicWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03F53CE1C7F1C7F004F05A5 /* BasicWebViewController.swift */; };
+		F03F53D11C7F299D004F05A5 /* ShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03F53D01C7F299D004F05A5 /* ShakeViewController.swift */; };
+		F03F54701C7F2CA3004F05A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F03F546F1C7F2CA3004F05A5 /* Assets.xcassets */; };
+		F03F54741C805DCD004F05A5 /* shake_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = F03F54731C805DCD004F05A5 /* shake_sound.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B40B47FC1C76C61A003A0920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B40B47DF1C76C61A003A0920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B40B47E61C76C61A003A0920;
+			remoteInfo = OneSunChat;
+		};
+		B40B48071C76C61A003A0920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B40B47DF1C76C61A003A0920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B40B47E61C76C61A003A0920;
+			remoteInfo = OneSunChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D0029BCD48B082FC1BA2CB3 /* Pods-OneSunChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSunChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSunChat/Pods-OneSunChat.debug.xcconfig"; sourceTree = "<group>"; };
+		2862792111328EA5F4F0CE22 /* Pods_OneSunChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSunChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		604837771FAD8E716943633A /* Pods-OneSunChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSunChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSunChat/Pods-OneSunChat.release.xcconfig"; sourceTree = "<group>"; };
+		62CD9C7832CF64C173DA9A4D /* Pods_OneSunChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSunChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7609D3781CAAA8F900329CCE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		AD187FF35286B26C50FCF971 /* Pods-OneSunChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSunChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSunChatTests/Pods-OneSunChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B40B47E71C76C61A003A0920 /* OneSunChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSunChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40B47FB1C76C61A003A0920 /* OneSunChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneSunChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40B47FF1C76C61A003A0920 /* OneSunChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSunChatTests.swift; sourceTree = "<group>"; };
+		B40B48011C76C61A003A0920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B40B48061C76C61A003A0920 /* OneSunChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneSunChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40B480A1C76C61A003A0920 /* OneSunChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSunChatUITests.swift; sourceTree = "<group>"; };
+		B40B480C1C76C61A003A0920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B40B48241C76D85B003A0920 /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		B40B48261C76DCE8003A0920 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = OneSunChat/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		B40B482D1C76DCE8003A0920 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OneSunChat/Info.plist; sourceTree = SOURCE_ROOT; };
+		B40B48351C76E26C003A0920 /* BasicNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicNavigationController.swift; sourceTree = "<group>"; };
+		B40B48371C76E2D5003A0920 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B40B48391C76E2EF003A0920 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		B40B483B1C76E300003A0920 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		B40B483D1C76E30F003A0920 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		B40B483F1C76E3B0003A0920 /* BasicTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTabBarController.swift; sourceTree = "<group>"; };
+		B4104BBE1C7C65CB00048F60 /* BasicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
+		B4104BC01C7C6A1600048F60 /* BasicTableViewDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewDatasource.swift; sourceTree = "<group>"; };
+		B4104BC21C7C6C8C00048F60 /* BasicDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDataModel.swift; sourceTree = "<group>"; };
+		B4104BC41C7C6CCC00048F60 /* BasicTableViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewItem.swift; sourceTree = "<group>"; };
+		B4104BCE1C7C7C5D00048F60 /* AppUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
+		B4104BCF1C7C7C5D00048F60 /* CacheCenterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheCenterManager.swift; sourceTree = "<group>"; };
+		B4104BD01C7C7C5D00048F60 /* DataPersistentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPersistentManager.swift; sourceTree = "<group>"; };
+		B4104BD11C7C7C5D00048F60 /* UserUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUtil.swift; sourceTree = "<group>"; };
+		B4383EB71C7D4CF600633991 /* PublicDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicDefine.swift; sourceTree = "<group>"; };
+		B441E4B41C86B191003C4401 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
+		B441E4B61C86B8A2003C4401 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		B441E4BA1C86F37B003C4401 /* BasicTableViewGroupItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewGroupItem.swift; sourceTree = "<group>"; };
+		B441E4BC1C86FD54003C4401 /* BasicTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableView.swift; sourceTree = "<group>"; };
+		B462A59E1C8000DE00B47784 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		D2A27E308F73F779D0E23C09 /* Pods-OneSunChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSunChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSunChatUITests/Pods-OneSunChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E21B813C0D5B5803641EAB55 /* Pods-OneSunChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSunChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSunChatTests/Pods-OneSunChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		F01172FB1C8176450074FE0D /* AlbumListViewBkg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlbumListViewBkg.jpg; sourceTree = "<group>"; };
+		F03F53BE1C7D6648004F05A5 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		F03F53CE1C7F1C7F004F05A5 /* BasicWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicWebViewController.swift; path = TableView/BasicWebViewController.swift; sourceTree = "<group>"; };
+		F03F53D01C7F299D004F05A5 /* ShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeViewController.swift; sourceTree = "<group>"; };
+		F03F546F1C7F2CA3004F05A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OneSunChat/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		F03F54731C805DCD004F05A5 /* shake_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_sound.wav; sourceTree = "<group>"; };
+		FA2DAE7F77BE93955314E91D /* Pods-OneSunChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSunChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSunChatUITests/Pods-OneSunChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCB2CBDD04656014ABB14525 /* Pods_OneSunChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSunChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B40B47E41C76C61A003A0920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7609D3791CAAA8F900329CCE /* LocalAuthentication.framework in Frameworks */,
+				94795098D93B90D9155062E9 /* Pods_OneSunChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40B47F81C76C61A003A0920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9857422E8B10B29ACBFB7C /* Pods_OneSunChatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40B48031C76C61A003A0920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA19335307BC6D8A733E279 /* Pods_OneSunChatUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090057DD4EF4D08CD7D88B0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D0029BCD48B082FC1BA2CB3 /* Pods-OneSunChat.debug.xcconfig */,
+				604837771FAD8E716943633A /* Pods-OneSunChat.release.xcconfig */,
+				AD187FF35286B26C50FCF971 /* Pods-OneSunChatTests.debug.xcconfig */,
+				E21B813C0D5B5803641EAB55 /* Pods-OneSunChatTests.release.xcconfig */,
+				FA2DAE7F77BE93955314E91D /* Pods-OneSunChatUITests.debug.xcconfig */,
+				D2A27E308F73F779D0E23C09 /* Pods-OneSunChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84C09A45A03C2B864A928813 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7609D3781CAAA8F900329CCE /* LocalAuthentication.framework */,
+				2862792111328EA5F4F0CE22 /* Pods_OneSunChat.framework */,
+				FCB2CBDD04656014ABB14525 /* Pods_OneSunChatTests.framework */,
+				62CD9C7832CF64C173DA9A4D /* Pods_OneSunChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B40B47DE1C76C61A003A0920 = {
+			isa = PBXGroup;
+			children = (
+				B40B47E91C76C61A003A0920 /* OneSunChat */,
+				B40B47FE1C76C61A003A0920 /* OneSunChatTests */,
+				B40B48091C76C61A003A0920 /* OneSunChatUITests */,
+				B40B47E81C76C61A003A0920 /* Products */,
+				84C09A45A03C2B864A928813 /* Frameworks */,
+				090057DD4EF4D08CD7D88B0A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B40B47E81C76C61A003A0920 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B40B47E71C76C61A003A0920 /* OneSunChat.app */,
+				B40B47FB1C76C61A003A0920 /* OneSunChatTests.xctest */,
+				B40B48061C76C61A003A0920 /* OneSunChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B40B47E91C76C61A003A0920 /* OneSunChat */ = {
+			isa = PBXGroup;
+			children = (
+				B40B481B1C76CFF0003A0920 /* Util(工具) */,
+				B40B48181C76CFE0003A0920 /* Category（分类扩展） */,
+				B40B481A1C76CFF0003A0920 /* BasicClass（应用基类） */,
+				B40B48211C76D490003A0920 /* CustomComponent（自定义组件） */,
+				B40B48191C76CFF0003A0920 /* AppComponent（应用级组件） */,
+				B40B481C1C76D050003A0920 /* Supporting */,
+			);
+			path = OneSunChat;
+			sourceTree = "<group>";
+		};
+		B40B47FE1C76C61A003A0920 /* OneSunChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				B40B47FF1C76C61A003A0920 /* OneSunChatTests.swift */,
+				B40B48011C76C61A003A0920 /* Info.plist */,
+			);
+			path = OneSunChatTests;
+			sourceTree = "<group>";
+		};
+		B40B48091C76C61A003A0920 /* OneSunChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B40B480A1C76C61A003A0920 /* OneSunChatUITests.swift */,
+				B40B480C1C76C61A003A0920 /* Info.plist */,
+			);
+			path = OneSunChatUITests;
+			sourceTree = "<group>";
+		};
+		B40B48181C76CFE0003A0920 /* Category（分类扩展） */ = {
+			isa = PBXGroup;
+			children = (
+				B462A59E1C8000DE00B47784 /* UIImage+Extension.swift */,
+			);
+			name = "Category（分类扩展）";
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B40B48191C76CFF0003A0920 /* AppComponent（应用级组件） */ = {
+			isa = PBXGroup;
+			children = (
+				B40B48201C76D2C3003A0920 /* OSunChat */,
+				B40B481D1C76D2C3003A0920 /* Contact */,
+				B40B481E1C76D2C3003A0920 /* Discover */,
+				B40B481F1C76D2C3003A0920 /* Mine */,
+			);
+			name = "AppComponent（应用级组件）";
+			path = AppComponent;
+			sourceTree = "<group>";
+		};
+		B40B481A1C76CFF0003A0920 /* BasicClass（应用基类） */ = {
+			isa = PBXGroup;
+			children = (
+				B4104BBD1C7C64CC00048F60 /* TableView */,
+				B40B48241C76D85B003A0920 /* BasicViewController.swift */,
+				F03F53CE1C7F1C7F004F05A5 /* BasicWebViewController.swift */,
+				B40B48351C76E26C003A0920 /* BasicNavigationController.swift */,
+				B40B483F1C76E3B0003A0920 /* BasicTabBarController.swift */,
+				B4104BC21C7C6C8C00048F60 /* BasicDataModel.swift */,
+			);
+			name = "BasicClass（应用基类）";
+			path = BasicClass;
+			sourceTree = "<group>";
+		};
+		B40B481B1C76CFF0003A0920 /* Util(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				B4104BCE1C7C7C5D00048F60 /* AppUtil.swift */,
+				B4104BCF1C7C7C5D00048F60 /* CacheCenterManager.swift */,
+				B4104BD01C7C7C5D00048F60 /* DataPersistentManager.swift */,
+				B4104BD11C7C7C5D00048F60 /* UserUtil.swift */,
+				B4383EB71C7D4CF600633991 /* PublicDefine.swift */,
+			);
+			name = "Util(工具)";
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B40B481C1C76D050003A0920 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				F03F54721C805DCD004F05A5 /* Sources */,
+				F03F546F1C7F2CA3004F05A5 /* Assets.xcassets */,
+				B40B48261C76DCE8003A0920 /* AppDelegate.swift */,
+				B40B48281C76DCE8003A0920 /* Base.lproj */,
+				B40B482D1C76DCE8003A0920 /* Info.plist */,
+			);
+			name = Supporting;
+			path = OneSunChat/Supporting;
+			sourceTree = SOURCE_ROOT;
+		};
+		B40B481D1C76D2C3003A0920 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				B40B48391C76E2EF003A0920 /* ContactViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		B40B481E1C76D2C3003A0920 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B40B483B1C76E300003A0920 /* DiscoverViewController.swift */,
+				F03F53BE1C7D6648004F05A5 /* QRCodeViewController.swift */,
+				F03F53D01C7F299D004F05A5 /* ShakeViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B40B481F1C76D2C3003A0920 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B40B483D1C76E30F003A0920 /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B40B48201C76D2C3003A0920 /* OSunChat */ = {
+			isa = PBXGroup;
+			children = (
+				B40B48371C76E2D5003A0920 /* ChatViewController.swift */,
+				B441E4B61C86B8A2003C4401 /* ChatTableViewCell.swift */,
+			);
+			path = OSunChat;
+			sourceTree = "<group>";
+		};
+		B40B48211C76D490003A0920 /* CustomComponent（自定义组件） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CustomComponent（自定义组件）";
+			path = CustomComponent;
+			sourceTree = "<group>";
+		};
+		B40B48281C76DCE8003A0920 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Base.lproj;
+			path = OneSunChat/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		B4104BBD1C7C64CC00048F60 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				B4104BBE1C7C65CB00048F60 /* BasicTableViewController.swift */,
+				B4104BC01C7C6A1600048F60 /* BasicTableViewDatasource.swift */,
+				B4104BC41C7C6CCC00048F60 /* BasicTableViewItem.swift */,
+				B441E4B41C86B191003C4401 /* BasicTableViewCell.swift */,
+				B441E4BA1C86F37B003C4401 /* BasicTableViewGroupItem.swift */,
+				B441E4BC1C86FD54003C4401 /* BasicTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		F03F54721C805DCD004F05A5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F01172FB1C8176450074FE0D /* AlbumListViewBkg.jpg */,
+				F03F54731C805DCD004F05A5 /* shake_sound.wav */,
+			);
+			name = Sources;
+			path = OneSunChat/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B40B47E61C76C61A003A0920 /* OneSunChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40B480F1C76C61A003A0920 /* Build configuration list for PBXNativeTarget "OneSunChat" */;
+			buildPhases = (
+				9802EDD18FA3EB99BB8C827F /* [CP] Check Pods Manifest.lock */,
+				B40B47E31C76C61A003A0920 /* Sources */,
+				B40B47E41C76C61A003A0920 /* Frameworks */,
+				B40B47E51C76C61A003A0920 /* Resources */,
+				7F07858CDB62FFC635FD01EF /* [CP] Embed Pods Frameworks */,
+				31B01BF96A54A61C3A0B2371 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSunChat;
+			productName = OneSunChat;
+			productReference = B40B47E71C76C61A003A0920 /* OneSunChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B40B47FA1C76C61A003A0920 /* OneSunChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40B48121C76C61A003A0920 /* Build configuration list for PBXNativeTarget "OneSunChatTests" */;
+			buildPhases = (
+				2DE87CDC563F38CF7FD7C1F5 /* [CP] Check Pods Manifest.lock */,
+				B40B47F71C76C61A003A0920 /* Sources */,
+				B40B47F81C76C61A003A0920 /* Frameworks */,
+				B40B47F91C76C61A003A0920 /* Resources */,
+				E9621198F012EA06310D917A /* [CP] Embed Pods Frameworks */,
+				82178D7565114489790D87A1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B40B47FD1C76C61A003A0920 /* PBXTargetDependency */,
+			);
+			name = OneSunChatTests;
+			productName = OneSunChatTests;
+			productReference = B40B47FB1C76C61A003A0920 /* OneSunChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B40B48051C76C61A003A0920 /* OneSunChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B40B48151C76C61A003A0920 /* Build configuration list for PBXNativeTarget "OneSunChatUITests" */;
+			buildPhases = (
+				3ED9F9A22493868D5ECE81E7 /* [CP] Check Pods Manifest.lock */,
+				B40B48021C76C61A003A0920 /* Sources */,
+				B40B48031C76C61A003A0920 /* Frameworks */,
+				B40B48041C76C61A003A0920 /* Resources */,
+				2BAA687B9D69FBD77A4298B3 /* [CP] Embed Pods Frameworks */,
+				43E4BB06C64EFA61085B499B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B40B48081C76C61A003A0920 /* PBXTargetDependency */,
+			);
+			name = OneSunChatUITests;
+			productName = OneSunChatUITests;
+			productReference = B40B48061C76C61A003A0920 /* OneSunChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B40B47DF1C76C61A003A0920 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "刘ToTo";
+				TargetAttributes = {
+					B40B47E61C76C61A003A0920 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2ZD2CZ782K;
+						ProvisioningStyle = Automatic;
+					};
+					B40B47FA1C76C61A003A0920 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2ZD2CZ782K;
+						TestTargetID = B40B47E61C76C61A003A0920;
+					};
+					B40B48051C76C61A003A0920 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2ZD2CZ782K;
+						TestTargetID = B40B47E61C76C61A003A0920;
+					};
+				};
+			};
+			buildConfigurationList = B40B47E21C76C61A003A0920 /* Build configuration list for PBXProject "OneSunChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B40B47DE1C76C61A003A0920;
+			productRefGroup = B40B47E81C76C61A003A0920 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B40B47E61C76C61A003A0920 /* OneSunChat */,
+				B40B47FA1C76C61A003A0920 /* OneSunChatTests */,
+				B40B48051C76C61A003A0920 /* OneSunChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B40B47E51C76C61A003A0920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03F54701C7F2CA3004F05A5 /* Assets.xcassets in Resources */,
+				F03F54741C805DCD004F05A5 /* shake_sound.wav in Resources */,
+				F01172FC1C8176450074FE0D /* AlbumListViewBkg.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40B47F91C76C61A003A0920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40B48041C76C61A003A0920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BAA687B9D69FBD77A4298B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSunChatUITests/Pods-OneSunChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DE87CDC563F38CF7FD7C1F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		31B01BF96A54A61C3A0B2371 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSunChat/Pods-OneSunChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ED9F9A22493868D5ECE81E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43E4BB06C64EFA61085B499B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSunChatUITests/Pods-OneSunChatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F07858CDB62FFC635FD01EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSunChat/Pods-OneSunChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82178D7565114489790D87A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSunChatTests/Pods-OneSunChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9802EDD18FA3EB99BB8C827F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9621198F012EA06310D917A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSunChatTests/Pods-OneSunChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B40B47E31C76C61A003A0920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441E4B51C86B191003C4401 /* BasicTableViewCell.swift in Sources */,
+				B4104BC31C7C6C8C00048F60 /* BasicDataModel.swift in Sources */,
+				F03F53CF1C7F1C7F004F05A5 /* BasicWebViewController.swift in Sources */,
+				B40B483A1C76E2EF003A0920 /* ContactViewController.swift in Sources */,
+				B40B482F1C76DCE8003A0920 /* AppDelegate.swift in Sources */,
+				F03F53BF1C7D6648004F05A5 /* QRCodeViewController.swift in Sources */,
+				B4104BD41C7C7C5D00048F60 /* DataPersistentManager.swift in Sources */,
+				B40B48381C76E2D5003A0920 /* ChatViewController.swift in Sources */,
+				B441E4B71C86B8A2003C4401 /* ChatTableViewCell.swift in Sources */,
+				B441E4BB1C86F37B003C4401 /* BasicTableViewGroupItem.swift in Sources */,
+				B40B48401C76E3B0003A0920 /* BasicTabBarController.swift in Sources */,
+				B4104BD51C7C7C5D00048F60 /* UserUtil.swift in Sources */,
+				B40B483E1C76E30F003A0920 /* MineViewController.swift in Sources */,
+				B4383EB81C7D4CF600633991 /* PublicDefine.swift in Sources */,
+				B40B483C1C76E300003A0920 /* DiscoverViewController.swift in Sources */,
+				B4104BD31C7C7C5D00048F60 /* CacheCenterManager.swift in Sources */,
+				B4104BD21C7C7C5D00048F60 /* AppUtil.swift in Sources */,
+				B4104BC51C7C6CCC00048F60 /* BasicTableViewItem.swift in Sources */,
+				B462A59F1C8000DE00B47784 /* UIImage+Extension.swift in Sources */,
+				B40B48361C76E26C003A0920 /* BasicNavigationController.swift in Sources */,
+				B4104BBF1C7C65CB00048F60 /* BasicTableViewController.swift in Sources */,
+				B40B48251C76D85B003A0920 /* BasicViewController.swift in Sources */,
+				B4104BC11C7C6A1600048F60 /* BasicTableViewDatasource.swift in Sources */,
+				F03F53D11C7F299D004F05A5 /* ShakeViewController.swift in Sources */,
+				B441E4BD1C86FD54003C4401 /* BasicTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40B47F71C76C61A003A0920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40B48001C76C61A003A0920 /* OneSunChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40B48021C76C61A003A0920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40B480B1C76C61A003A0920 /* OneSunChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B40B47FD1C76C61A003A0920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B40B47E61C76C61A003A0920 /* OneSunChat */;
+			targetProxy = B40B47FC1C76C61A003A0920 /* PBXContainerItemProxy */;
+		};
+		B40B48081C76C61A003A0920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B40B47E61C76C61A003A0920 /* OneSunChat */;
+			targetProxy = B40B48071C76C61A003A0920 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B40B480D1C76C61A003A0920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B40B480E1C76C61A003A0920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B40B48101C76C61A003A0920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0029BCD48B082FC1BA2CB3 /* Pods-OneSunChat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer: fsymbio@hotmail.com (BCHQE7797K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2ZD2CZ782K;
+				INFOPLIST_FILE = OneSunChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.TestDemos.OneSunChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B40B48111C76C61A003A0920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 604837771FAD8E716943633A /* Pods-OneSunChat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer: fsymbio@hotmail.com (BCHQE7797K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2ZD2CZ782K;
+				INFOPLIST_FILE = OneSunChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FsThatOne.TestDemos.OneSunChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B40B48131C76C61A003A0920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD187FF35286B26C50FCF971 /* Pods-OneSunChatTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2ZD2CZ782K;
+				INFOPLIST_FILE = OneSunChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amer.OneSunChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneSunChat.app/OneSunChat";
+			};
+			name = Debug;
+		};
+		B40B48141C76C61A003A0920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E21B813C0D5B5803641EAB55 /* Pods-OneSunChatTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2ZD2CZ782K;
+				INFOPLIST_FILE = OneSunChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amer.OneSunChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneSunChat.app/OneSunChat";
+			};
+			name = Release;
+		};
+		B40B48161C76C61A003A0920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2DAE7F77BE93955314E91D /* Pods-OneSunChatUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2ZD2CZ782K;
+				INFOPLIST_FILE = OneSunChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amer.OneSunChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OneSunChat;
+			};
+			name = Debug;
+		};
+		B40B48171C76C61A003A0920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2A27E308F73F779D0E23C09 /* Pods-OneSunChatUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2ZD2CZ782K;
+				INFOPLIST_FILE = OneSunChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amer.OneSunChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OneSunChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B40B47E21C76C61A003A0920 /* Build configuration list for PBXProject "OneSunChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40B480D1C76C61A003A0920 /* Debug */,
+				B40B480E1C76C61A003A0920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40B480F1C76C61A003A0920 /* Build configuration list for PBXNativeTarget "OneSunChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40B48101C76C61A003A0920 /* Debug */,
+				B40B48111C76C61A003A0920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40B48121C76C61A003A0920 /* Build configuration list for PBXNativeTarget "OneSunChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40B48131C76C61A003A0920 /* Debug */,
+				B40B48141C76C61A003A0920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B40B48151C76C61A003A0920 /* Build configuration list for PBXNativeTarget "OneSunChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B40B48161C76C61A003A0920 /* Debug */,
+				B40B48171C76C61A003A0920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B40B47DF1C76C61A003A0920 /* Project object */;
+}

@@ -11,6 +11,6 @@ import UIKit
 extension UIImage{
     convenience init?(name: String, renderingMode: UIImageRenderingMode) {
         self.init(named: name)
-        imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        self.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
     }
 }

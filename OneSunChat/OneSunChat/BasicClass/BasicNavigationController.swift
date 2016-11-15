@@ -15,7 +15,7 @@ class BasicNavigationController: UINavigationController {
 
     }
     // MARK : - 设置状态栏样式
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }

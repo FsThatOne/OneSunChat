@@ -14,13 +14,13 @@ class ChatTableViewCell: BasicTableViewCell {
             textLabel?.text = "ChatTableViewCell"
             var detail: String = ""
             switch(item.cellStyle){
-            case .Default :
+            case .default :
                 detail = "UITableViewCellStyleDefault"
-            case .Subtitle :
+            case .subtitle :
                 detail = "UITableViewCellStyleSubtitle"
-            case .Value1 :
+            case .value1 :
                 detail = "UITableViewCellStyleValue1"
-            case .Value2 :
+            case .value2 :
                 detail = "UITableViewCellStyleValue2"
             }
             

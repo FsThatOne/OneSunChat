@@ -17,8 +17,8 @@ enum scanType {
     case Animation
 }
 
-let grayWidth = (UIScreen.mainScreen().bounds.width - 250) * 0.5
-let grayHeight = (UIScreen.mainScreen().bounds.height - 250) * 0.5
+let grayWidth = (UIScreen.main.bounds.width - 250) * 0.5
+let grayHeight = (UIScreen.main.bounds.height - 250) * 0.5
 
 class QRCodeViewController: BasicViewController, UITabBarDelegate, AVCaptureMetadataOutputObjectsDelegate{
     
@@ -31,7 +31,7 @@ class QRCodeViewController: BasicViewController, UITabBarDelegate, AVCaptureMeta
     //tabbar
     lazy var tabbar: UITabBar = {
         let tabbar = UITabBar()
-        tabbar.barStyle = UIBarStyle.Black
+        tabbar.barStyle = UIBarStyle.black
         tabbar.delegate = self
         return tabbar
     }()
@@ -55,15 +55,15 @@ class QRCodeViewController: BasicViewController, UITabBarDelegate, AVCaptureMeta
     lazy var session : AVCaptureSession = AVCaptureSession()
     //in&output
     lazy var inputDevice: AVCaptureDeviceInput? = {
-        let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         return try? AVCaptureDeviceInput(device: device)
     }()
     lazy var outputData = AVCaptureMetadataOutput()
     //预览图层
     lazy var previewLayer: AVCaptureVideoPreviewLayer = {
         let layer = AVCaptureVideoPreviewLayer(session: self.session)
-        layer.videoGravity = AVLayerVideoGravityResizeAspectFill
-        return layer
+        layer?.videoGravity = AVLayerVideoGravityResizeAspectFill
+        return layer!
     }()
     
     
@@ -73,24 +73,24 @@ class QRCodeViewController: BasicViewController, UITabBarDelegate, AVCaptureMeta
         setUpUI()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         setUpSession()
         session.startRunning()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         startAnimation()
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         session.stopRunning()
         view.layer.removeAllAnimations()
     }
     
     func startAnimation(){
-        UIView.animateWithDuration(2.0) {
+        UIView.animate(withDuration: 2.0) {
             UIView.setAnimationRepeatCount(MAXFLOAT)
-            self.scanLine.transform = CGAffineTransformMakeTranslation(0, self.scanView.bounds.height - 10)
+            self.scanLine.transform = CGAffineTransform(translationX: 0, y: self.scanView.bounds.height - 10)
         }
     }
 }
@@ -111,7 +111,7 @@ extension QRCodeViewController{
         session.addOutput(outputData)
         
         outputData.metadataObjectTypes = outputData.availableMetadataObjectTypes;
-        outputData.setMetadataObjectsDelegate(self, queue: dispatch_get_main_queue())
+        outputData.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
         
     }
     
@@ -120,8 +120,8 @@ extension QRCodeViewController{
         for dataObject in metadataObjects {
             
             if let codeObject = dataObject as? AVMetadataMachineReadableCodeObject,
-                obj = previewLayer.transformedMetadataObjectForMetadataObject(codeObject) as? AVMetadataMachineReadableCodeObject {
-                if CGRectContainsRect(scanView.frame, obj.bounds) {
+                let obj = previewLayer.transformedMetadataObject(for: codeObject) as? AVMetadataMachineReadableCodeObject {
+                if scanView.frame.contains(obj.bounds) {
                     if currentDetectedCount > maxDetectedCount{
                         session.stopRunning()
                         // TODO: - 识别二维码之后的动作
@@ -140,8 +140,8 @@ extension QRCodeViewController{
 // MARK: - UITabBarDelegate
 extension QRCodeViewController{
     func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
-        scanLine.transform = CGAffineTransformIdentity
-        item == tabBar.items![0] ? updateConstraints(.QRCode) : updateConstraints(.BarCode)
+        scanLine.transform = CGAffineTransform.identity
+        item == tabBar.items![0] ? updateConstraints(type: .QRCode) : updateConstraints(type: .BarCode)
         view.layer.removeAllAnimations()
         startAnimation()
     }
@@ -170,10 +170,10 @@ extension QRCodeViewController{
     
     func setupLayers(){
         previewLayer.frame = view.bounds
-        view.layer.insertSublayer(previewLayer, atIndex: 0)
+        view.layer.insertSublayer(previewLayer, at: 0)
         
         //镂空灰色蒙板
-        let gray = CGColorCreateCopyWithAlpha(UIColor.blackColor().CGColor , 0.4)
+        let gray = UIColor.black.cgColor.copy(alpha: 0.4)
         
         let left: CALayer = CALayer()
         let right: CALayer = CALayer()
@@ -183,8 +183,8 @@ extension QRCodeViewController{
         right.backgroundColor = gray
         top.backgroundColor = gray
         bottom.backgroundColor = gray
-        left.frame = CGRect(x: 0, y: 0, width: grayWidth, height: CGRectGetHeight(view.frame))
-        right.frame = CGRect(x: kScreenWidth - grayWidth, y: 0, width: grayWidth, height: CGRectGetHeight(view.frame))
+        left.frame = CGRect(x: 0, y: 0, width: grayWidth, height: view.frame.height)
+        right.frame = CGRect(x: kScreenWidth - grayWidth, y: 0, width: grayWidth, height: view.frame.height)
         top.frame = CGRect(x: grayWidth, y: 0, width: 250, height: grayHeight)
         bottom.frame = CGRect(x: grayWidth, y: kScreenHieght - grayHeight, width: 250, height: grayHeight)
         view.layer.addSublayer(left)
@@ -194,58 +194,59 @@ extension QRCodeViewController{
     }
     
     func addConstraints(){
-        tabbar.snp_makeConstraints { (make) in
-            make.bottom.equalTo(view.snp_bottom)
-            make.left.equalTo(view.snp_left)
-            make.right.equalTo(view.snp_right)
+
+        tabbar.snp.makeConstraints { (make) in
+            make.bottom.equalTo(view.snp.bottom)
+            make.left.equalTo(view.snp.left)
+            make.right.equalTo(view.snp.right)
             make.height.equalTo(59)
         }
-        scanView.snp_makeConstraints { (make) in
-            make.center.equalTo(view.snp_center)
+        scanView.snp.makeConstraints { (make) in
+            make.center.equalTo(view.snp.center)
             make.width.equalTo(250)
             make.height.equalTo(250)
         }
-        upLeftImg.snp_makeConstraints { (make) in
-            make.left.equalTo(scanView.snp_left)
-            make.top.equalTo(scanView.snp_top)
+        upLeftImg.snp.makeConstraints { (make) in
+            make.left.equalTo(scanView.snp.left)
+            make.top.equalTo(scanView.snp.top)
             make.width.equalTo(25)
             make.height.equalTo(25)
         }
-        upRightImg.snp_makeConstraints { (make) in
-            make.right.equalTo(scanView.snp_right)
-            make.top.equalTo(scanView.snp_top)
+        upRightImg.snp.makeConstraints { (make) in
+            make.right.equalTo(scanView.snp.right)
+            make.top.equalTo(scanView.snp.top)
             make.width.equalTo(25)
             make.height.equalTo(25)
         }
-        downLeftImg.snp_makeConstraints { (make) in
-            make.left.equalTo(scanView.snp_left)
-            make.bottom.equalTo(scanView.snp_bottom)
+        downLeftImg.snp.makeConstraints { (make) in
+            make.left.equalTo(scanView.snp.left)
+            make.bottom.equalTo(scanView.snp.bottom)
             make.width.equalTo(25)
             make.height.equalTo(25)
         }
-        downRightImg.snp_makeConstraints { (make) in
-            make.right.equalTo(scanView.snp_right)
-            make.bottom.equalTo(scanView.snp_bottom)
+        downRightImg.snp.makeConstraints { (make) in
+            make.right.equalTo(scanView.snp.right)
+            make.bottom.equalTo(scanView.snp.bottom)
             make.width.equalTo(25)
             make.height.equalTo(25)
         }
-        scanLine.snp_makeConstraints { (make) in
+        scanLine.snp.makeConstraints { (make) in
             make.height.equalTo(4)
-            make.top.equalTo(scanView.snp_top).offset(3)
-            make.width.equalTo(scanView.snp_width)
-            make.left.equalTo(scanView.snp_left)
+            make.top.equalTo(scanView.snp.top).offset(3)
+            make.width.equalTo(scanView.snp.width)
+            make.left.equalTo(scanView.snp.left)
         }
     }
     //更新约束
     func updateConstraints(type: scanType) {
         switch type {
         case .QRCode:
-            scanView.snp_updateConstraints { (make) in
+            scanView.snp.updateConstraints { (make) in
                 make.height.equalTo(250)
             }
 //        case .BarCode:
         default:
-            scanView.snp_updateConstraints { (make) in
+            scanView.snp.updateConstraints { (make) in
                 make.height.equalTo(150)
             }
         }

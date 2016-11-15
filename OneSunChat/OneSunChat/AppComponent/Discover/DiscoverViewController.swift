@@ -16,8 +16,8 @@ class  DiscoverViewController: BasicViewController ,UITableViewDataSource, UITab
     
     // MARK: - layout
     override func loadView() {
-        let tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: UITableViewStyle.Grouped)
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "discoverCell")
+        let tableView = UITableView(frame: UIScreen.main.bounds, style: UITableViewStyle.grouped)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "discoverCell")
         tableView.delegate = self
         tableView.dataSource = self
         view = tableView
@@ -41,7 +41,7 @@ class  DiscoverViewController: BasicViewController ,UITableViewDataSource, UITab
 // MARK: - UITableViewDelegate
 extension DiscoverViewController{
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
         //扫一扫
         if indexPath.section == 1 && indexPath.row == 0 {
             let QRCodeScanVC = QRCodeViewController(title: "二维码/条形码", hiddenTabBar: true)
@@ -63,7 +63,7 @@ extension DiscoverViewController{
         return 4
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
             return 1
@@ -72,7 +72,7 @@ extension DiscoverViewController{
         }
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
         return 45
     }
     
@@ -84,16 +84,16 @@ extension DiscoverViewController{
         return 5
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("discoverCell")!
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "discoverCell")!
+        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         let cellText : String?
         let cellImageName : String?
         switch indexPath.section {
         case 0:
             cellText = "朋友圈"
             cellImageName = "Friend"
-            hasFriendNotify(cell)
+            hasFriendNotify(cell: cell)
         case 1:
             if indexPath.row == 0 {
                 cellText = "扫一扫"
@@ -120,8 +120,8 @@ extension DiscoverViewController{
             }
         }
         cell.imageView?.image = UIImage(named: "dis_Icon" + cellImageName!)
-        cell.textLabel?.attributedText = NSAttributedString(string: cellText!, attributes: [NSFontAttributeName : UIFont.systemFontOfSize(16)])
-        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.textLabel?.attributedText = NSAttributedString(string: cellText!, attributes: [NSFontAttributeName : UIFont.systemFont(ofSize: 16)])
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
         
     }

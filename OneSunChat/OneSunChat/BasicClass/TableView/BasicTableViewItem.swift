@@ -10,6 +10,6 @@ import UIKit
 
 class BasicTableViewItem: BasicDataModel {
     var cellClass: String?
-    var cellStyle: UITableViewCellStyle = .Default
+    var cellStyle: UITableViewCellStyle = .default
     
 }

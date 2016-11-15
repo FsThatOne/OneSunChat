@@ -16,15 +16,15 @@ class BasicTableViewDatasource: NSObject, UITableViewDataSource{
     var createCell:creatCellClosure?
     var isGroup:Bool{
         get{
-            guard let itemsT = items?.first  where
-                      itemsT.isKindOfClass(BasicTableViewGroupItem.self) else{
+            guard let itemsT = items?.first,
+                itemsT.isKind(of: BasicTableViewGroupItem.self) else{
                 return false
             }
             return true
         }
     }
     
-    convenience init(customCell: creatCellClosure) {
+    convenience init(customCell: @escaping creatCellClosure) {
         self.init()
         createCell = customCell
     }
@@ -37,7 +37,7 @@ extension BasicTableViewDatasource{
         return isGroup ? (items?.count ?? 1) : 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         if isGroup {
             let group = items?[section] as! BasicTableViewGroupItem
             return group.subItems.count
@@ -45,7 +45,7 @@ extension BasicTableViewDatasource{
         return items?.count ?? 0
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var item: BasicTableViewItem
         if isGroup {
             let group = items?[indexPath.section] as! BasicTableViewGroupItem
@@ -53,7 +53,7 @@ extension BasicTableViewDatasource{
         }else{
             item = items![indexPath.row] as! BasicTableViewItem
         }
-        var cell = tableView.dequeueReusableCellWithIdentifier(item.cellClass!) as? BasicTableViewCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: item.cellClass!) as? BasicTableViewCell
         if cell == nil ,
             let createCell = createCell{
                 cell = createCell()
@@ -62,10 +62,3 @@ extension BasicTableViewDatasource{
         return cell!
     }
 }
-
-///// 工厂类创建cell
-//private class CellFactory<T : TableViewCellItemProtocol> {
-//    class func create(style: UITableViewCellStyle, reuseID: String?) -> T {
-//        return T(style: style, reuseIdentifier: reuseID)
-//    }
-//}
