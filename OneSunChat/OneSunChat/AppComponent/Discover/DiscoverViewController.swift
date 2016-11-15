@@ -41,14 +41,14 @@ class  DiscoverViewController: BasicViewController ,UITableViewDataSource, UITab
 // MARK: - UITableViewDelegate
 extension DiscoverViewController{
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //扫一扫
-        if indexPath.section == 1 && indexPath.row == 0 {
+        if (indexPath.section, indexPath.row) == (1, 0) {
             let QRCodeScanVC = QRCodeViewController(title: "二维码/条形码", hiddenTabBar: true)
             navigationController?.pushViewController(QRCodeScanVC, animated: true)
         }
         //摇一摇
-        if indexPath.section == 1 && indexPath.row == 1 {
+        if (indexPath.section, indexPath.row) == (1, 1) {
             let shakeVC = ShakeViewController(title: "摇一摇", hiddenTabBar: true)
             navigationController?.pushViewController(shakeVC, animated: true)
         }
@@ -58,8 +58,7 @@ extension DiscoverViewController{
 
 // MARK: - UITableViewDataSource
 extension DiscoverViewController{
-
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 4
     }
     
@@ -72,15 +71,16 @@ extension DiscoverViewController{
         }
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 45
     }
+
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeader InSection: Int) -> CGFloat {
         return 15
     }
     
-    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForFooter InSection: Int) -> CGFloat {
         return 5
     }
     
